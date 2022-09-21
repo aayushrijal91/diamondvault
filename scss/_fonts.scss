@@ -1,9 +1,13 @@
-$font-gilroy: "Gilroy", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-$font-body: $font-gilroy;
+$font-inter: "Inter", sans-serif;
+$font-maiah: "Maiah", sans-serif;
+
+$font-body: $font-inter;
 
 $font-families: (
-    "gilroy": "Gilroy",
+    "inter": "Inter",
+    "maiah": "Maiah",
 );
 
 @each $name,
@@ -20,7 +24,6 @@ $asset-path: "../webfonts/";
     @font-face {
         font-family: $font-family;
         src: local($font-file), url($asset-path + $font-file + ".woff") format("woff"),
-            url($asset-path + $font-file + ".woff2") format("woff2"),
             url($asset-path + $font-file + ".eot") format("embedded-opentype"),
             url($asset-path + $font-file + ".ttf") format("truetype");
         font-weight: $weight;
@@ -28,16 +31,10 @@ $asset-path: "../webfonts/";
     }
 }
 
-@include font-face("Gilroy", "Gilroy-Thin", 100);
-@include font-face("Gilroy", "Gilroy-Ultralight", 200);
-@include font-face("Gilroy", "Gilroy-Light", 300);
-@include font-face("Gilroy", "Gilroy-Regular", 400);
-@include font-face("Gilroy", "Gilroy-Medium", 500);
-@include font-face("Gilroy", "Gilroy-Semibold", 600);
-@include font-face("Gilroy", "Gilroy-Bold", 700);
-@include font-face("Gilroy", "Gilroy-Extrabold", 800);
-@include font-face("Gilroy", "Gilroy-Black", 900);
-@include font-face("Gilroy", "Gilroy-Heavy", 901);
+@include font-face("Maiah", "Maiah-Thin", 300);
+@include font-face("Maiah", "Maiah-Light", 400);
+@include font-face("Maiah", "Maiah-Regular", 600);
+@include font-face("Maiah", "Maiah-Bold", 800);
 
 $font-weights: 300, 400, 500, 600, 700, 800, 900;
 

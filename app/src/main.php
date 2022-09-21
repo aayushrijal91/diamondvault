@@ -8,18 +8,18 @@ include __DIR__ . '/header.php';
         <div class="container">
             <div class="row justify-content-center justify-content-lg-between align-items-center">
                 <div class="col">
-                    <div class="row">
+                    <div class="row gx-xxl-5">
                         <div class="col-auto">
-                            <a href="" class="">Our Products</a>
+                            <a href="#" class="header-btn">Our Products</a>
                         </div>
                         <div class="col-auto">
-                            <a href="" class="">Ring Quote</a>
+                            <a href="#" class="header-btn">Ring Quote</a>
                         </div>
                         <div class="col-auto">
-                            <a href="" class="">Enquire</a>
+                            <a href="#" class="header-btn">Enquire</a>
                         </div>
                         <div class="col-auto">
-                            <a href="" class="">FAQs</a>
+                            <a href="#" class="header-btn">FAQs</a>
                         </div>
                     </div>
                 </div>
@@ -45,6 +45,49 @@ include __DIR__ . '/header.php';
                         </div>
                         <div class="col-auto">
                             <a href="" class=""><?= renderImg('whatsapp.png', 'icons') ?></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="row">
+                        <div class="col-lg-5 text-center">
+                            <div class="fs-1 fw-600 text-uppercase font-maiah text-primary letter-spacing-n04 line-height-12">Custom<br> One of a Kind Jewelry</div>
+                            <div class="text-white fs-9 py-5">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua commodo.
+                            </div>
+                            <a href="#" class="btn btn-primary">
+                                <span class="pe-3">See All</span> <svg width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4393 20.5607C17.0251 21.1464 17.9749 21.1464 18.5607 20.5607L27.5607 11.5607C28.1464 10.9749 28.1464 10.0251 27.5607 9.43934L18.5607 0.43934C17.9749 -0.146447 17.0251 -0.146447 16.4393 0.43934C15.8536 1.02513 15.8536 1.97487 16.4393 2.56066L24.3787 10.5L16.4393 18.4393C15.8536 19.0251 15.8536 19.9749 16.4393 20.5607Z" fill="white" />
+                                    <path d="M0 10.5C0 9.67157 0.671573 9 1.5 9H24.5C25.3284 9 26 9.67157 26 10.5C26 11.3284 25.3284 12 24.5 12H1.5C0.671572 12 0 11.3284 0 10.5Z" fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-11 col-xxl-10">
+                    <div class="row align-items-end">
+                        <div class="col-lg-6"><?= renderImg("watch-ring.png", "lib", "w-100") ?></div>
+                        <div class="col-lg-6 text-center py-7 px-5">
+                            <?= renderImg('about-diamond.png', 'logo') ?>
+                            <div class="fs-4 fw-600 text-uppercase font-maiah text-primary letter-spacing-02 line-height-12 py-5">Celebrate your love without sacrificing mother earth</div>
+                            <a href="#" class="btn btn-primary">
+                                <span class="pe-3 text-uppercase fw-600">lets pick a ring</span> <svg width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4393 20.5607C17.0251 21.1464 17.9749 21.1464 18.5607 20.5607L27.5607 11.5607C28.1464 10.9749 28.1464 10.0251 27.5607 9.43934L18.5607 0.43934C17.9749 -0.146447 17.0251 -0.146447 16.4393 0.43934C15.8536 1.02513 15.8536 1.97487 16.4393 2.56066L24.3787 10.5L16.4393 18.4393C15.8536 19.0251 15.8536 19.9749 16.4393 20.5607Z" fill="white" />
+                                    <path d="M0 10.5C0 9.67157 0.671573 9 1.5 9H24.5C25.3284 9 26 9.67157 26 10.5C26 11.3284 25.3284 12 24.5 12H1.5C0.671572 12 0 11.3284 0 10.5Z" fill="white" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>

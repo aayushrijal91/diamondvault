@@ -4,7 +4,25 @@
 
 header {
     background: imgUrl('header.png') center top;
-    background-size: cover;
+    background-size: contain;
+
+    .header-top-bar {
+        padding: 37px 0;
+
+        .header-btn {
+            text-decoration: none;
+            color: $white;
+            font-size: 17px;
+        }
+    }
+
+    .banner {
+        padding: 104px 0 125px;
+    }
+
+    .about {
+
+    }
 }
 
 footer {

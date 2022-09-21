@@ -1,4 +1,4 @@
-$primary: #742CFF;
+$primary: #B5997D;
 $primary-light: #787BE6;
 $primary-dark: #00007D;
 $secondary: #040987;
@@ -13,8 +13,7 @@ $dark: #141413;
 
 $theme-colors: (
     ) !default;
-$theme-colors: map-merge((
-            "primary": $primary,
+$theme-colors: map-merge(("primary": $primary,
             "primary-light": $primary-light,
             "primary-dark": $primary-dark,
             "secondary": $secondary,
@@ -31,34 +30,34 @@ $theme-colors: map-merge((
 );
 
 $font-sizes: (
-    1: 6rem,
-    //96px
-    2: 4rem,
-    //64px
-    3: 3rem,
-    //48px
-    4: 2.5rem,
-    //40px
-    5: 2.25rem,
-    //36px
-    6: 2rem,
-    //32px
-    7: 1.5rem,
-    //24px
-    8: 1.375rem,
-    //22px
-    9: 1.25rem,
-    //20px
-    10: 1.125rem,
-    //18px
-    11: 1rem,
-    //16px
-    12: 0.875rem,
-    //14px
-    13: 0.75rem,
-    //12px
-    14: 0.625rem,
-    //10px
+    1: 4.6875rem,
+    // 75px
+    2: 4.375rem,
+    // 70px
+    3: 3.75rem,
+    // 60px
+    4: 2.875rem,
+    // 46px
+    5: 2.5rem,
+    // 40px
+    6: 2.25rem,
+    // 36px
+    7: 2rem,
+    // 32px
+    8: 1.5rem,
+    // 24px
+    9: 1.3125rem,
+    // 21px
+    10: 1.25rem,
+    // 20px
+    11: 1.125rem,
+    // 18px
+    12: 1rem,
+    // 16px
+    13: 0.875rem,
+    // 14px
+    14: 0.75rem,
+    // 12px
 );
 
 // Grid Breakpoints
