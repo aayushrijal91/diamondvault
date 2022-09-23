@@ -23,3 +23,12 @@ $('#return-to-top').on('click', () => {
         scrollTop: 0
     }, 500);
 });
+
+$(() => {
+    $('#product-slider').slick({
+        slidesToShow: 4,
+        arrows:true,
+        prevArrow: "<img class='a-left control-c prev slick-prev' src='assets/images/icons/slick-prev.png'>",
+        nextArrow: "<img class='a-right control-c next slick-next' src='assets/images/icons/slick-next.png'>",
+    });
+})
