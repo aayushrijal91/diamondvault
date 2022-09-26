@@ -31,4 +31,26 @@ $(() => {
         prevArrow: "<img class='a-left control-c prev slick-prev' src='assets/images/icons/slick-prev.png'>",
         nextArrow: "<img class='a-right control-c next slick-next' src='assets/images/icons/slick-next.png'>",
     });
-})
+
+    $("#watches-slider").slick({
+        slidesToShow: 1,
+        vertical: true,
+        slidesToScroll: 1,
+        prevArrow: $("#arrow-top"),
+        nextArrow: $("#arrow-bottom"),
+    });
+});
+
+$(".accordion-head").on('click', function () {
+    $(".accordion-head").removeClass("active");
+    $(this).addClass('active');
+
+    if ($('.accordion-body').is(':visible')) {
+        $(".accordion-body").slideUp(300);
+    }
+    if ($(this).next(".accordion-body").is(':visible')) {
+        $(this).next(".accordion-body").slideUp(300);
+    } else {
+        $(this).next(".accordion-body").slideDown(300);
+    }
+});

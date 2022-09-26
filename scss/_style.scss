@@ -103,13 +103,13 @@ section.custom-diamond {
     }
 }
 
-section.diamond-cuts {
+section.diamond-type {
     color: $white;
     padding: 183px 0;
 
     .diamond-choice {
         background: imgUrl('diamond-cuts.png') right top;
-        
+
         hr {
             margin: 0;
         }
@@ -136,7 +136,6 @@ section.diamond-cuts {
                     &::before {
                         content: "-";
                         position: absolute;
-                        // top: 3px;
                         left: 0;
                     }
                 }
@@ -145,9 +144,138 @@ section.diamond-cuts {
     }
 }
 
+section.diamond-variety {
+    .variety-card {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        .button {
+            position: absolute;
+            bottom: 6.125rem;
+        }
+    }
+}
+
+section.watch-collection {
+    padding: 142px 0;
+    background: #030307;
+    position: relative;
+
+    .watches-slider {
+        background-color: $white;
+
+        .watch-slider-content {
+            padding: 56px 71px 67px;
+
+            .watch-platform {
+                background-color: #f8f8f8;
+                min-height: 416px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 24px;
+                margin: 23px 0 32px;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .watch-arrows {
+        position: absolute;
+        left: 103%;
+        right: 0;
+        cursor: pointer;
+    }
+}
+
+section.faq {
+    padding: 64px 0;
+    background: linear-gradient(180deg, #030307 0%, #141413 100%);
+
+    @include media-breakpoint-up(lg) {
+        padding: 206px 0;
+    }
+
+    button:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    .accordion-card {
+        margin: 3px 0;
+    }
+
+    .accordion-container {
+        width: 100%;
+    }
+
+    .accordion-head {
+        background-color: $white;
+        color: $dark;
+        cursor: pointer;
+        font-weight: 600;
+        text-transform: capitalize;
+        padding: 1rem;
+        transition: 0.2s all;
+
+        @include media-breakpoint-up(xl) {
+            font-size: 1.5rem; // 24px
+            padding: 52px 60px;
+        }
+
+        .main-question {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .plusminus {
+            height: 48px;
+            width: 48px;
+            background: $light;
+            color: $dark;
+            border-radius: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.1s all ease-in-out;
+        }
+        
+        &.active {
+            .plusminus {
+                background: $dark;
+                color: $white;
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    .accordion-body {
+        background: $white;
+        color: $dark;
+        display: none;
+        padding: 24px 1rem;
+        line-height: 2;
+        font-size: 1.25rem; // 20px
+
+        @include media-breakpoint-up(md) {
+            padding: 0 170px 55px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            font-size: 0.875rem;
+        }
+    }
+}
+
 footer {
     font-size: 0.875rem;
-    background-color: #221f1f;
+    background-color: $black;
+    padding: 76px 0;
 
     @include media-breakpoint-down(sm) {
         font-size: 0.61rem;
