@@ -244,7 +244,7 @@ section.faq {
             align-items: center;
             transition: 0.1s all ease-in-out;
         }
-        
+
         &.active {
             .plusminus {
                 background: $dark;
@@ -268,6 +268,100 @@ section.faq {
 
         @include media-breakpoint-down(sm) {
             font-size: 0.875rem;
+        }
+    }
+}
+
+section.form {
+
+    .section_1,
+    .section_2 {
+        label {
+            font-weight: 600;
+            color: $white;
+            line-height: 1;
+            padding-bottom: 14px;
+            font-family: $font-raleway;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 0.875rem;
+            }
+        }
+
+        .form-control {
+            height: 64px;
+            border-radius: 0;
+            padding-left: 19px;
+            padding-right: 19px;
+            font-family: $font-raleway;
+            font-weight: 500;
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+
+            &::placeholder {
+                color: #9BA7B0;
+            }
+        }
+
+        .select-wrapper {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: "";
+                background: imgUrl('select-caret.png', 'icons');
+                width: 17px;
+                height: 11px;
+                right: 40px;
+                top: 40%;
+                z-index: 1000000000;
+            }
+
+            select {
+                color: #9BA7B0;
+            }
+        }
+
+        hr {
+            border-color: $primary;
+            opacity: 1;
+            margin: 80px 0;
+            border-width: 1px;
+        }
+
+        button {
+            height: 64px;
+            width: 100%;
+            color: $white;
+            background: $primary;
+            text-transform: uppercase;
+            font-family: $font-raleway;
+            font-weight: 800;
+        }
+    }
+
+    .section_1 {
+        background-color: #141413;
+        padding-bottom: 88px;
+
+        .form-control {
+            border: 1px solid rgba(155, 167, 176, 0.26);
+            background-color: $white;
+            color: $black;
+        }
+    }
+
+    .section_2 {
+        background-color: $black;
+        padding: 126px 0;
+
+        .form-control {
+            border: 1px solid #3F3F3F;
+            background: transparent;
+            color: $white;
         }
     }
 }

@@ -389,4 +389,95 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 
+<section class="form" id="form">
+    <form action="./src/form" method="POST">
+        <div class="section_1">
+            <div class="container">
+                <div class="text-primary fw-700 fs-2">Contact Us</div>
+                <div class="fw-600 fs-11 text-white">Simply complete our form below &amp; we'll get back to you as soon as possible</div>
+                <div class="pt-6 pb-5 fw-700 fs-6 text-primary font-raleway">Let us know what you are looking for?</div>
+                <div class="row g-5">
+                    <div class="col-md-6">
+                        <label>What Custom jewellery are you interested in?*</label>
+                        <input type="text" placeholder="Bracelet" class="form-control" name="jewelleryType" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="">Choose Your Preferred Colour:*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control" name="preferredColour" required>
+                                <option selected>Two-Tone Rose &amp; White Gold</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="">Do you give Diamond Vault permission on featuring your finished design on our Social Media Platforms?*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control" name="permission" required>
+                                <option selected>Yes</option>
+                                <option>No</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section_2">
+            <div class="container">
+                <div class="font-raleway text-white fw-700 fs-6 pb-5">High-End Custom Work &amp; Exclusive Piece Details</div>
+                <div class="row g-5">
+                    <div class="col-md-6">
+                        <label>What type of Clarity</label>
+                        <div class="select-wrapper">
+                            <select class="form-control" name="clarity">
+                                <option disabled selected>Select Clarity</option>
+                                <option>Clarity 1</option>
+                                <option>Clarity 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label>What type of Alloys</label>
+                        <div class="select-wrapper">
+                            <select class="form-control" name="alloy">
+                                <option disabled selected>Select Alloys</option>
+                                <option>Alloys 1</option>
+                                <option>Alloys 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Tell us your preferred Colour</label>
+                        <div class="select-wrapper">
+                            <select class="form-select form-control" name="colour">
+                                <option disabled selected>Preferred Colour</option>
+                                <option>Colour 1</option>
+                                <option>Colour 2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="font-raleway text-white fw-700 fs-6 pb-5">Your Contact Information</div>
+                <div class="row g-5">
+                    <div class="col-md-6">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="John Citizen" class="form-control" name="name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Contact number</label>
+                        <input type="tel" placeholder="0400 000 000" class="form-control" name="phoneNumber" required>
+                    </div>
+                    <div class="col-12">
+                        <label>Your Email</label>
+                        <input type="email" placeholder="name@example.com.au" class="form-control" name="email" required>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit">Submit Enquiry Form</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+
 <?php include __DIR__ . '/footer.php'; ?>
