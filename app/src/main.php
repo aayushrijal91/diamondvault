@@ -471,6 +471,7 @@ include __DIR__ . '/header.php';
 
 <section class="form" id="form">
     <form action="./src/form" method="POST">
+        <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse">
         <div class="section_1">
             <div class="container">
                 <div class="heading text-primary fw-700 fs-2">Contact Us</div>

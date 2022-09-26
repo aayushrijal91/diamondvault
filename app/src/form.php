@@ -17,10 +17,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
 
         $subject = "Message from " . $site;
 
+        $jewelleryType = $_POST['jewelleryType'];
+        $preferredColour = $_POST['preferredColour'];
+        $permission = $_POST['permission'];
+        $clarity = $_POST['clarity'];
+        $alloy = $_POST['alloy'];
+        $colour = $_POST['colour'];
         $name = $_POST['name'];
-        $phone = $_POST['phone'];
+        $phone = $_POST['phoneNumber'];
         $email = $_POST['email'];
-        $message = $_POST['message'];
 
         $message = '<!DOCTYPE html>
                 <html>
@@ -57,8 +62,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
             '<td><b>' . strip_tags($email) . '</b></td>' .
             '</tr>' .
             '<tr>' .
-            '<td>Message</td>' .
-            '<td><b>' . strip_tags($message) . '</b></td>' .
+            '<td>Custom Jewellery Choice</td>' .
+            '<td><b>' . strip_tags($jewelleryType) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>Preferred Colour</td>' .
+            '<td><b>' . strip_tags($preferredColour) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>Give Permission for Social Media Promotion?</td>' .
+            '<td><b>' . strip_tags($permission) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>What type of clarity?</td>' .
+            '<td><b>' . strip_tags($clarity) . '</b></td>' .
+            '</tr>' .
+            '<tr>' .
+            '<td>What type of alloy?</td>' .
+            '<td><b>' . strip_tags($jewelleryType) . '</b></td>' .
             '</tr>' .
             '</tbody></table></body></html>';
 
