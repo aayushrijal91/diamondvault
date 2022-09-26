@@ -28,7 +28,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-md-auto text-center">
+			<div class="col-12 col-lg-auto text-center">
 				<a href="https://www.aiims.com.au/like-our-work/" target="_blank">
 					<?= renderImg("aiims.png", "logo") ?>
 				</a>

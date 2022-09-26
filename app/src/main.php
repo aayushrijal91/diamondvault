@@ -4,7 +4,7 @@ include __DIR__ . '/header.php';
 ?>
 
 <header>
-    <nav class="navbar navbar-expand-lg d-lg-none py-4">
+    <nav class="navbar navbar-expand-xl d-xl-none py-4">
         <div class="container justify-content-center">
             <a href="./" class="pb-4">
                 <?= renderImg("logo.png", "logo") ?>
@@ -54,7 +54,7 @@ include __DIR__ . '/header.php';
             </div>
         </div>
     </nav>
-    <div class="header-top-bar d-none d-lg-block">
+    <div class="header-top-bar d-none d-xl-block">
         <div class="container">
             <div class="row justify-content-center justify-content-lg-between align-items-center">
                 <div class="col">
@@ -126,10 +126,10 @@ include __DIR__ . '/header.php';
     <div class="about">
         <div class="container-fluid">
             <div class="row justify-content-center">
-                <div class="col-lg-11">
-                    <div class="row align-items-end">
-                        <div class="col-lg-6"><?= renderImg("watch-ring.png", "lib", "w-100") ?></div>
-                        <div class="col-lg-5 text-center py-6 px-4 px-md-5">
+                <div class="col-xl-11">
+                    <div class="row justify-content-lg-center justify-content-xl-start align-items-end">
+                        <div class="col-lg-8 col-xl-6"><?= renderImg("watch-ring.png", "lib", "w-100") ?></div>
+                        <div class="col-xl-5 text-center py-6 px-4 px-md-5">
                             <?= renderImg('about-diamond.png', 'logo') ?>
                             <div class="heading fs-4 fw-600 text-uppercase font-maiah text-primary letter-spacing-02 line-height-12 py-5">Celebrate your love without sacrificing mother earth</div>
                             <div class="description">
@@ -193,7 +193,7 @@ include __DIR__ . '/header.php';
     <div class="custom-diamond-inner">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-5 text-center">
+                <div class="col-xl-5 text-center">
                     <?= renderImg('custom-diamond.png', 'lib') ?>
                     <div class="heading fs-5 fw-600 text-uppercase font-maiah text-primary letter-spacing-n04 line-height-12 py-5">custom one of a kind jewelry</div>
                     <div class="description text-secondary">
@@ -218,9 +218,9 @@ include __DIR__ . '/header.php';
         <div class="diamond-choice">
             <div class="row justify-content-center">
                 <div class="col-11">
-                    <div class="d-none d-md-block letter-spacing-n04 fs-11 fw-300 py-4">Choose a Diamond Cut</div>
+                    <div class="d-none d-lg-block letter-spacing-n04 fs-11 fw-300 py-4">Choose a Diamond Cut</div>
 
-                    <div class="d-md-none">
+                    <div class="d-lg-none">
                         <a class="diamond-type-toggle pb-4" id="diamond-type-toggle" href="javascript:void(0)">
                             <div>Choose a Diamond Cut</div>
                             <div>
@@ -242,9 +242,9 @@ include __DIR__ . '/header.php';
                             </ul>
                         </div>
                     </div>
-                    <hr class="d-none d-md-block">
+                    <hr class="d-none d-lg-block">
                     <div class="row">
-                        <div class="col-lg-5 d-none d-md-block">
+                        <div class="col-lg-5 d-none d-lg-block">
                             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                 <button class="nav-link active" id="v-pills-cushion-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cushion" type="button" role="tab" aria-controls="v-pills-cushion" aria-selected="true">Cushion</button>
                                 <button class="nav-link" id="v-pills-radient-tab" data-bs-toggle="pill" data-bs-target="#v-pills-radient" type="button" role="tab" aria-controls="v-pills-radient" aria-selected="false">Radient</button>
@@ -288,8 +288,8 @@ include __DIR__ . '/header.php';
 
 <section class="diamond-variety">
     <div class="container-fluid px-lg-0">
-        <div class="row gx-lg-0">
-            <div class="col-lg-4 h-inherit px-0">
+        <div class="row justify-content-center gx-lg-0">
+            <div class="col-md-6 col-xl-4 h-inherit px-0">
                 <div class="variety-card">
                     <?= renderImg('watches.jpg', 'lib', "w-100 h-100") ?>
                     <div class="button">
@@ -302,7 +302,7 @@ include __DIR__ . '/header.php';
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 h-inherit px-0">
+            <div class="col-md-6 col-xl-4 h-inherit px-0">
                 <div class="variety-card">
                     <?= renderImg('bracelets.jpg', 'lib', "w-100") ?>
                     <div class="button">
@@ -315,7 +315,7 @@ include __DIR__ . '/header.php';
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 h-inherit px-0">
+            <div class="col-md-6 col-xl-4 h-inherit px-0">
                 <div class="variety-card">
                     <?= renderImg('rings.jpg', 'lib', "w-100 h-100") ?>
                     <div class="button">
@@ -336,7 +336,7 @@ include __DIR__ . '/header.php';
     <div class="container">
         <div class="row align-items-center position-relative">
             <div class="col-lg h-inherit d-none d-md-block"><?= renderImg("slider-hero-watch.png", 'lib') ?></div>
-            <div class="col-lg-5 h-inherit">
+            <div class="col-lg-6 col-xl-5 h-inherit">
                 <div class="row align-items-center gx-2 gx-xl-5">
                     <div class="col-11">
                         <div class="watches-slider" id="watches-slider">
@@ -476,7 +476,7 @@ include __DIR__ . '/header.php';
                 <div class="heading text-primary fw-700 fs-2">Contact Us</div>
                 <div class="fw-600 fs-11 text-white">Simply complete our form below &amp; we'll get back to you as soon as possible</div>
                 <div class="pt-5 pt-md-6 pb-4 pb-md-5 fw-700 fs-6 text-primary font-raleway">Let us know what you are looking for?</div>
-                <div class="row gy-4 g-md-5">
+                <div class="row gy-4 g-xl-5">
                     <div class="col-md-6">
                         <label>What Custom jewellery are you interested in?*</label>
                         <input type="text" placeholder="Bracelet" class="form-control" name="jewelleryType" required>
