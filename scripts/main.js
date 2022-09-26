@@ -27,9 +27,18 @@ $('#return-to-top').on('click', () => {
 $(() => {
     $('#product-slider').slick({
         slidesToShow: 4,
-        arrows:true,
+        arrows: true,
         prevArrow: "<img class='a-left control-c prev slick-prev' src='assets/images/icons/slick-prev.png'>",
         nextArrow: "<img class='a-right control-c next slick-next' src='assets/images/icons/slick-next.png'>",
+        responsive: [
+            {
+                breakpoint: 540,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 
     $("#watches-slider").slick({

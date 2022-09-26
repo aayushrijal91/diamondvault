@@ -6,6 +6,11 @@ header {
     background: imgUrl('header.png') center top;
     background-size: contain;
 
+    @include media-breakpoint-down(sm) {
+        background: imgUrl('header-mobile.png') center top;
+        background-size: contain;
+    }
+
     .header-top-bar {
         padding: 37px 0;
 
@@ -13,6 +18,13 @@ header {
             text-decoration: none;
             color: $white;
             font-size: 17px;
+        }
+    }
+
+    nav.navbar {
+        .navbar-nav .nav-item .nav-link {
+            color: $white;
+            text-align: center;
         }
     }
 
@@ -187,9 +199,12 @@ section.watch-collection {
 
     .watch-arrows {
         position: absolute;
-        left: 103%;
         right: 0;
         cursor: pointer;
+
+        @include media-breakpoint-up(xl) {
+            left: 103%;
+        }
     }
 }
 
