@@ -6,6 +6,11 @@ header {
     background: imgUrl('header.png') center top;
     background-size: contain;
 
+    @include media-breakpoint-down(lg) {
+        background: imgUrl('header-tablet.jpg') center top;
+        background-size: contain;
+    }
+
     @include media-breakpoint-down(sm) {
         background: imgUrl('header-mobile.png') center top;
         background-size: contain;
@@ -71,6 +76,10 @@ section.products {
     padding: 50px 0;
 
     @include media-breakpoint-up(md) {
+        padding: 103px 0;
+    }
+
+    @include media-breakpoint-up(lg) {
         padding: 183px 0;
     }
 
@@ -87,13 +96,17 @@ section.products {
         .slick-prev {
             left: -50px;
 
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(lg) {
                 left: 0;
             }
         }
 
         .slick-next {
             right: -50px;
+
+            @include media-breakpoint-down(lg) {
+                right: 0;
+            }
 
             @include media-breakpoint-down(sm) {
                 right: 0;
@@ -135,7 +148,7 @@ section.custom-diamond {
     background: imgUrl("custom-ring.png") left center $black;
     background-size: contain;
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(lg) {
         background: imgUrl("custom-ring-mobile.png") center top $black;
         background-size: contain;
     }
@@ -145,7 +158,7 @@ section.custom-diamond {
         background: imgUrl("custom-watch.png") right center;
         background-size: contain;
 
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(lg) {
             background: imgUrl("custom-watch-mobile.png") center bottom;
             background-size: contain;
             padding: 327px 12px 368px;

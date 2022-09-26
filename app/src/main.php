@@ -289,7 +289,7 @@ include __DIR__ . '/header.php';
 <section class="diamond-variety">
     <div class="container-fluid px-lg-0">
         <div class="row gx-lg-0">
-            <div class="col-md-4 h-inherit px-0">
+            <div class="col-lg-4 h-inherit px-0">
                 <div class="variety-card">
                     <?= renderImg('watches.jpg', 'lib', "w-100 h-100") ?>
                     <div class="button">
@@ -302,7 +302,7 @@ include __DIR__ . '/header.php';
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 h-inherit px-0">
+            <div class="col-lg-4 h-inherit px-0">
                 <div class="variety-card">
                     <?= renderImg('bracelets.jpg', 'lib', "w-100") ?>
                     <div class="button">
@@ -315,7 +315,7 @@ include __DIR__ . '/header.php';
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 h-inherit px-0">
+            <div class="col-lg-4 h-inherit px-0">
                 <div class="variety-card">
                     <?= renderImg('rings.jpg', 'lib', "w-100 h-100") ?>
                     <div class="button">

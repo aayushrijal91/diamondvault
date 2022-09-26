@@ -32,7 +32,13 @@ $(() => {
         nextArrow: "<img class='a-right control-c next slick-next' src='assets/images/icons/slick-next.png'>",
         responsive: [
             {
-                breakpoint: 540,
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 900,
                 settings: {
                     slidesToShow: 1,
                 }
