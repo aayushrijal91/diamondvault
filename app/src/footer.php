@@ -1,9 +1,10 @@
 <footer>
 	<div class="container">
-		<div class="row justify-content-center justify-content-lg-between align-items-center">
+		<div class="row justify-content-center justify-content-lg-between align-items-center gy-4">
 			<div class="col-auto">
-				<div class="row align-items-center gx-xl-7">
-					<div class="col-auto"><?= renderImg("footer-logo.png", "logo") ?></div>
+				<div class="row justify-content-center align-items-center gy-4 gx-xl-7">
+					<div class="col-auto d-none d-md-block"><?= renderImg("footer-logo.png", "logo") ?></div>
+					<div class="col-auto d-md-none"><?= renderImg("logo.png", "logo") ?></div>
 					<div class="col-auto text-grey fs-13 fw-500">Copyright <?= date('Y') ?> All Rights Reserved</div>
 				</div>
 			</div>
@@ -27,7 +28,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-auto d-none d-lg-block">
+			<div class="col-12 col-md-auto text-center">
 				<a href="https://www.aiims.com.au/like-our-work/" target="_blank">
 					<?= renderImg("aiims.png", "logo") ?>
 				</a>

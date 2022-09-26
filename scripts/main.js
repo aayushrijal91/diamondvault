@@ -34,7 +34,6 @@ $(() => {
             {
                 breakpoint: 540,
                 settings: {
-                    arrows: false,
                     slidesToShow: 1,
                 }
             }
@@ -63,3 +62,7 @@ $(".accordion-head").on('click', function () {
         $(this).next(".accordion-body").slideDown(300);
     }
 });
+
+$("#diamond-type-toggle").on('click', function() {
+    $('.diamond-type-dropdown-menu').slideToggle();
+})

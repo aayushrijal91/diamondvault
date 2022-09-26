@@ -33,6 +33,19 @@ header {
 
         .description {
             padding: 40px 0;
+
+            @include media-breakpoint-down(sm) {
+                padding: 40px 30px;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 93px 0 41px;
+
+            .heading {
+                font-size: 3.125rem !important;
+                letter-spacing: -0.04em;
+            }
         }
     }
 
@@ -43,12 +56,23 @@ header {
             padding-bottom: 37px;
             font-weight: 300;
         }
+
+        @include media-breakpoint-down(sm) {
+            .heading {
+                font-size: 3.125rem !important;
+                letter-spacing: 0.02em;
+            }
+        }
     }
 }
 
 section.products {
-    padding: 183px 0;
     color: $white;
+    padding: 50px 0;
+
+    @include media-breakpoint-up(md) {
+        padding: 183px 0;
+    }
 
     .product-slider {
         .slick-track {
@@ -62,10 +86,18 @@ section.products {
 
         .slick-prev {
             left: -50px;
+
+            @include media-breakpoint-down(sm) {
+                left: 0;
+            }
         }
 
         .slick-next {
             right: -50px;
+
+            @include media-breakpoint-down(sm) {
+                right: 0;
+            }
         }
 
         .slick-arrow {
@@ -103,14 +135,34 @@ section.custom-diamond {
     background: imgUrl("custom-ring.png") left center $black;
     background-size: contain;
 
+    @include media-breakpoint-down(sm) {
+        background: imgUrl("custom-ring-mobile.png") center top $black;
+        background-size: contain;
+    }
+
     .custom-diamond-inner {
         padding: 95px 0 142px;
         background: imgUrl("custom-watch.png") right center;
         background-size: contain;
 
+        @include media-breakpoint-down(sm) {
+            background: imgUrl("custom-watch-mobile.png") center bottom;
+            background-size: contain;
+            padding: 327px 12px 368px;
+
+            .heading {
+                font-size: 3.125rem !important;
+                letter-spacing: -0.04em;
+            }
+        }
+
         .description {
             font-size: 1.3125rem;
             padding-bottom: 60px;
+
+            @include media-breakpoint-down(sm) {
+                padding: 0 30px 31px;
+            }
         }
     }
 }
@@ -119,15 +171,66 @@ section.diamond-type {
     color: $white;
     padding: 183px 0;
 
+    @include media-breakpoint-down(sm) {
+        padding: 76px 0 86px;
+
+        .heading {
+            font-size: 3.125rem !important;
+            letter-spacing: -0.04em;
+        }
+    }
+
     .diamond-choice {
         background: imgUrl('diamond-cuts.png') right top;
 
+        @include media-breakpoint-down(sm) {
+            background-size: 305px;
+            background-position-y: 78%;
+        }
+
+        .diamond-type-toggle {
+            color: $white;
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 21px;
+        }
+
         hr {
             margin: 0;
+            border-color: $white;
         }
 
         .nav {
             padding: 100px 0 0;
+
+            @include media-breakpoint-down(sm) {
+                padding: 24px 0 0;
+            }
+
+            ul.diamond-type-dropdown-menu {
+                list-style: none;
+                padding-inline-start: 0;
+                display: none;
+
+                li {
+                    .nav-link {
+                        font-size: 1.125rem;
+                        padding: 0;
+                        line-height: 2;
+                        margin: 0 auto;
+
+                        &.active {
+                            padding-left: 0;
+
+                            &::before {
+                                content: "";
+                            }
+                        }
+                    }
+                }
+            }
 
             .nav-link {
                 background: none;
@@ -165,6 +268,17 @@ section.diamond-variety {
         .button {
             position: absolute;
             bottom: 6.125rem;
+
+            @include media-breakpoint-down(sm) {
+                bottom: 56px;
+
+                a {
+                    height: 38px;
+                    font-size: 0.875rem;
+                    display: inline;
+                    padding: 11px 24px;
+                }
+            }
         }
     }
 }
@@ -174,11 +288,23 @@ section.watch-collection {
     background: #030307;
     position: relative;
 
+    @include media-breakpoint-down(sm) {
+        padding: 102px 0 30px;
+    }
+
     .watches-slider {
         background-color: $white;
 
         .watch-slider-content {
             padding: 56px 71px 67px;
+
+            @include media-breakpoint-down(sm) {
+                padding: 18px 11px 22px;
+
+                .heading {
+                    font-size: 2.25rem !important;
+                }
+            }
 
             .watch-platform {
                 background-color: #f8f8f8;
@@ -198,8 +324,6 @@ section.watch-collection {
     }
 
     .watch-arrows {
-        position: absolute;
-        right: 0;
         cursor: pointer;
 
         @include media-breakpoint-up(xl) {
@@ -209,8 +333,12 @@ section.watch-collection {
 }
 
 section.faq {
-    padding: 64px 0;
     background: linear-gradient(180deg, #030307 0%, #141413 100%);
+    padding-bottom: 140px;
+
+    @include media-breakpoint-up(md) {
+        padding: 64px 0;
+    }
 
     @include media-breakpoint-up(lg) {
         padding: 206px 0;
@@ -246,6 +374,10 @@ section.faq {
         .main-question {
             font-size: 2rem;
             font-weight: 700;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 0.875rem;
+            }
         }
 
         .plusminus {
@@ -273,7 +405,7 @@ section.faq {
         background: $white;
         color: $dark;
         display: none;
-        padding: 24px 1rem;
+        padding: 0 1rem 24px;
         line-height: 2;
         font-size: 1.25rem; // 20px
 
@@ -288,18 +420,23 @@ section.faq {
 }
 
 section.form {
+    @include media-breakpoint-down(sm) {
+        .heading {
+            font-size: 2.5rem !important;
+            line-height: 1.15;
+        }
+    }
 
     .section_1,
     .section_2 {
         label {
             font-weight: 600;
             color: $white;
-            line-height: 1;
             padding-bottom: 14px;
             font-family: $font-raleway;
 
             @include media-breakpoint-down(sm) {
-                font-size: 0.875rem;
+                font-size: 1.125rem;
             }
         }
 
@@ -345,6 +482,10 @@ section.form {
             opacity: 1;
             margin: 80px 0;
             border-width: 1px;
+
+            @include media-breakpoint-down(sm) {
+                margin: 62px 0;
+            }
         }
 
         button {
@@ -362,6 +503,10 @@ section.form {
         background-color: #141413;
         padding-bottom: 88px;
 
+        @include media-breakpoint-down(sm) {
+            padding-bottom: 67px;
+        }
+
         .form-control {
             border: 1px solid rgba(155, 167, 176, 0.26);
             background-color: $white;
@@ -372,6 +517,10 @@ section.form {
     .section_2 {
         background-color: $black;
         padding: 126px 0;
+
+        @include media-breakpoint-down(sm) {
+            padding: 53px 0 64px;
+        }
 
         .form-control {
             border: 1px solid #3F3F3F;
@@ -384,7 +533,11 @@ section.form {
 footer {
     font-size: 0.875rem;
     background-color: $black;
-    padding: 76px 0;
+    padding-bottom: 29px;
+
+    @include media-breakpoint-up(md) {
+        padding: 76px 0;
+    }
 
     @include media-breakpoint-down(sm) {
         font-size: 0.61rem;

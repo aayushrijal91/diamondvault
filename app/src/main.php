@@ -107,7 +107,7 @@ include __DIR__ . '/header.php';
                 <div class="col-xl-10">
                     <div class="row">
                         <div class="col-lg-6 px-xl-5 text-center">
-                            <div class="fs-1 fw-600 text-uppercase font-maiah text-primary letter-spacing-n04 line-height-12">Custom<br> One of a Kind Jewelry</div>
+                            <div class="heading fs-1 fw-600 text-uppercase font-maiah text-primary letter-spacing-n04 line-height-12">Custom<br> One of a Kind Jewelry</div>
                             <div class="description text-white fs-9">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua commodo.
                             </div>
@@ -129,9 +129,9 @@ include __DIR__ . '/header.php';
                 <div class="col-lg-11">
                     <div class="row align-items-end">
                         <div class="col-lg-6"><?= renderImg("watch-ring.png", "lib", "w-100") ?></div>
-                        <div class="col-lg-5 text-center py-6 px-5">
+                        <div class="col-lg-5 text-center py-6 px-4 px-md-5">
                             <?= renderImg('about-diamond.png', 'logo') ?>
-                            <div class="fs-4 fw-600 text-uppercase font-maiah text-primary letter-spacing-02 line-height-12 py-5">Celebrate your love without sacrificing mother earth</div>
+                            <div class="heading fs-4 fw-600 text-uppercase font-maiah text-primary letter-spacing-02 line-height-12 py-5">Celebrate your love without sacrificing mother earth</div>
                             <div class="description">
                                 <p>For <span class="fw-800">custom bracelets</span> & chains just need to know cm size for anything custom.</p>
                                 <p>For <span class="fw-800">gold Cuban chains & bracelets</span> need too know cm size and thickness in width also different designs e.g Miami Cuban, diamond cut sand blast finish</p>
@@ -195,7 +195,7 @@ include __DIR__ . '/header.php';
             <div class="row justify-content-center">
                 <div class="col-lg-5 text-center">
                     <?= renderImg('custom-diamond.png', 'lib') ?>
-                    <div class="fs-5 fw-600 text-uppercase font-maiah text-primary letter-spacing-n04 line-height-12 py-5">custom one of a kind jewelry</div>
+                    <div class="heading fs-5 fw-600 text-uppercase font-maiah text-primary letter-spacing-n04 line-height-12 py-5">custom one of a kind jewelry</div>
                     <div class="description text-secondary">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.
@@ -214,14 +214,37 @@ include __DIR__ . '/header.php';
 
 <section class="diamond-type">
     <div class="container">
-        <div class="text-center text-uppercase letter-spacing-02 font-maiah fs-4 fw-600 pb-6">Diamond Cuts</div>
+        <div class="heading text-center text-uppercase letter-spacing-02 font-maiah fs-4 fw-600 pb-5 pb-md-6">Diamond Cuts</div>
         <div class="diamond-choice">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-11">
-                    <div class="letter-spacing-n04 fs-11 fw-300 py-4">Choose a Diamond Cut</div>
-                    <hr>
+                    <div class="d-none d-md-block letter-spacing-n04 fs-11 fw-300 py-4">Choose a Diamond Cut</div>
+
+                    <div class="d-md-none">
+                        <a class="diamond-type-toggle pb-4" id="diamond-type-toggle" href="javascript:void(0)">
+                            <div>Choose a Diamond Cut</div>
+                            <div>
+                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292894C-0.0976315 0.683418 -0.0976315 1.31658 0.292893 1.70711L6.29289 7.70711C6.68342 8.09763 7.31658 8.09763 7.70711 7.70711L13.7071 1.70711C14.0976 1.31658 14.0976 0.683418 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L7 5.58579L1.70711 0.292894C1.31658 -0.0976304 0.683417 -0.0976304 0.292893 0.292894Z" fill="white" />
+                                </svg>
+                            </div>
+                        </a>
+                        <hr>
+                        <div class="nav flex-column nav-pills" id="v-pills-tab-sm" role="tablist" aria-orientation="vertical">
+                            <ul class="diamond-type-dropdown-menu">
+                                <li><button class="nav-link active" id="v-pills-cushion-tab-sm" data-bs-toggle="pill" data-bs-target="#v-pills-cushion" type="button" role="tab" aria-controls="v-pills-cushion" aria-selected="true">Cushion</button></li>
+                                <li><button class="nav-link" id="v-pills-radient-tab-sm" data-bs-toggle="pill" data-bs-target="#v-pills-radient" type="button" role="tab" aria-controls="v-pills-radient" aria-selected="false">Radient</button></li>
+                                <li><button class="nav-link" id="v-pills-princess-tab-sm" data-bs-toggle="pill" data-bs-target="#v-pills-princess" type="button" role="tab" aria-controls="v-pills-princess" aria-selected="false">Princess</button></li>
+                                <li><button class="nav-link" id="v-pills-round-tab-sm" data-bs-toggle="pill" data-bs-target="#v-pills-round" type="button" role="tab" aria-controls="v-pills-round" aria-selected="false">Round</button></li>
+                                <li><button class="nav-link" id="v-pills-oval-tab-sm" data-bs-toggle="pill" data-bs-target="#v-pills-oval" type="button" role="tab" aria-controls="v-pills-oval" aria-selected="false">Oval</button></li>
+                                <li><button class="nav-link" id="v-pills-pear-tab-sm" data-bs-toggle="pill" data-bs-target="#v-pills-pear" type="button" role="tab" aria-controls="v-pills-pear" aria-selected="false">Pear</button></li>
+                                <li><button class="nav-link" id="v-pills-emerald-tab-sm" data-bs-toggle="pill" data-bs-target="#v-pills-emerald" type="button" role="tab" aria-controls="v-pills-emerald" aria-selected="false">Emerald</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="d-none d-md-block">
                     <div class="row">
-                        <div class="col-lg-5">
+                        <div class="col-lg-5 d-none d-md-block">
                             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                 <button class="nav-link active" id="v-pills-cushion-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cushion" type="button" role="tab" aria-controls="v-pills-cushion" aria-selected="true">Cushion</button>
                                 <button class="nav-link" id="v-pills-radient-tab" data-bs-toggle="pill" data-bs-target="#v-pills-radient" type="button" role="tab" aria-controls="v-pills-radient" aria-selected="false">Radient</button>
@@ -266,7 +289,7 @@ include __DIR__ . '/header.php';
 <section class="diamond-variety">
     <div class="container-fluid px-lg-0">
         <div class="row gx-lg-0">
-            <div class="col-md-4 h-inherit">
+            <div class="col-md-4 h-inherit px-0">
                 <div class="variety-card">
                     <?= renderImg('watches.jpg', 'lib', "w-100 h-100") ?>
                     <div class="button">
@@ -279,7 +302,7 @@ include __DIR__ . '/header.php';
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 h-inherit">
+            <div class="col-md-4 h-inherit px-0">
                 <div class="variety-card">
                     <?= renderImg('bracelets.jpg', 'lib', "w-100") ?>
                     <div class="button">
@@ -292,7 +315,7 @@ include __DIR__ . '/header.php';
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 h-inherit">
+            <div class="col-md-4 h-inherit px-0">
                 <div class="variety-card">
                     <?= renderImg('rings.jpg', 'lib', "w-100 h-100") ?>
                     <div class="button">
@@ -312,57 +335,64 @@ include __DIR__ . '/header.php';
 <section class="watch-collection">
     <div class="container">
         <div class="row align-items-center position-relative">
-            <div class="col-lg h-inherit"><?= renderImg("slider-hero-watch.png", 'lib') ?></div>
+            <div class="col-lg h-inherit d-none d-md-block"><?= renderImg("slider-hero-watch.png", 'lib') ?></div>
             <div class="col-lg-5 h-inherit">
-                <div class="watches-slider" id="watches-slider">
-                    <div class="watch-slider-content">
-                        <div class="font-maiah text-center letter-spacing-n04 fs-4 fw-600">Our Watches</div>
-                        <div class="watch-platform">
-                            <?= renderImg("rolex-watch.png", "lib") ?>
-                        </div>
-                        <div class="row justify-content-between align-items-center">
-                            <div class="col-auto">
-                                <div class="fs-12 fw-600">Submariner</div>
-                                <div class="fs-14 text-grey text-uppercase">Rolex</div>
+                <div class="row align-items-center gx-2 gx-xl-5">
+                    <div class="col-11">
+                        <div class="watches-slider" id="watches-slider">
+                            <div class="watch-slider-content">
+                                <div class="heading font-maiah text-center letter-spacing-n04 fs-4 fw-600">Our Watches</div>
+                                <div class="watch-platform">
+                                    <?= renderImg("rolex-watch.png", "lib") ?>
+                                </div>
+                                <div class="row justify-content-between align-items-center">
+                                    <div class="col-auto">
+                                        <div class="fs-12 fw-600">Submariner</div>
+                                        <div class="fs-14 text-grey text-uppercase">Rolex</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#" class="p-0 text-primary text-decoration-none fs-12 fw-600">Enquire</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-auto">
-                                <a href="#" class="p-0 text-primary text-decoration-none fs-12 fw-600">Enquire</a>
+                            <div class="watch-slider-content">
+                                <div class="font-maiah text-center letter-spacing-n04 fs-4 fw-600">Our Watches</div>
+                                <div class="watch-platform">
+                                    <?= renderImg("rolex-watch.png", "lib") ?>
+                                </div>
+                                <div class="row justify-content-between align-items-center">
+                                    <div class="col-auto">
+                                        <div class="fs-12 fw-600">Submariner</div>
+                                        <div class="fs-14 text-grey text-uppercase">Rolex</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#" class="p-0 text-primary text-decoration-none fs-12 fw-600">Enquire</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="watch-slider-content">
-                        <div class="font-maiah text-center letter-spacing-n04 fs-4 fw-600">Our Watches</div>
-                        <div class="watch-platform">
-                            <?= renderImg("rolex-watch.png", "lib") ?>
-                        </div>
-                        <div class="row justify-content-between align-items-center">
-                            <div class="col-auto">
-                                <div class="fs-12 fw-600">Submariner</div>
-                                <div class="fs-14 text-grey text-uppercase">Rolex</div>
+                    <div class="col-1 text-center">
+                        <div class="watch-arrows">
+                            <div id="arrow-top" class="pb-5">
+                                <svg width="14" height="37" viewBox="0 0 14 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.7">
+                                        <path d="M1 7L7 1L13 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <rect x="8" y="37" width="2" height="36" rx="1" transform="rotate(-180 8 37)" fill="white" />
+                                    </g>
+                                </svg>
                             </div>
-                            <div class="col-auto">
-                                <a href="#" class="p-0 text-primary text-decoration-none fs-12 fw-600">Enquire</a>
+                            <div id="arrow-bottom" class="pt-5">
+                                <svg width="14" height="37" viewBox="0 0 14 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 30L7 36L1 30" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <rect x="6" width="2" height="36" rx="1" fill="white" />
+                                </svg>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="watch-arrows">
-                <div id="arrow-top" class="pb-5">
-                    <svg width="14" height="37" viewBox="0 0 14 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g opacity="0.7">
-                            <path d="M1 7L7 1L13 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <rect x="8" y="37" width="2" height="36" rx="1" transform="rotate(-180 8 37)" fill="white" />
-                        </g>
-                    </svg>
-                </div>
-                <div id="arrow-bottom" class="pt-5">
-                    <svg width="14" height="37" viewBox="0 0 14 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13 30L7 36L1 30" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        <rect x="6" width="2" height="36" rx="1" fill="white" />
-                    </svg>
-                </div>
-            </div>
+            <div class="col-lg h-inherit d-md-none"><?= renderImg("slider-hero-watch-sm.png", 'lib') ?></div>
         </div>
     </div>
 </section>
@@ -407,10 +437,10 @@ include __DIR__ . '/header.php';
             <?php foreach ($faqs as $key => $faq) : ?>
                 <div class="accordion-card">
                     <div class="accordion-head<?= $index == 1 ? ' active' : '' ?>">
-                        <div class="row justify-content-between w-100">
+                        <div class="row justify-content-between w-100 m-0">
                             <div class="col">
                                 <div class="main-question">
-                                    <div class="row gx-5 align-items-center">
+                                    <div class="row gx-md-5 align-items-center">
                                         <div class="col-auto text-primary fs-4 line-height-1">
                                             <?= $key ?>
                                         </div>
@@ -443,10 +473,10 @@ include __DIR__ . '/header.php';
     <form action="./src/form" method="POST">
         <div class="section_1">
             <div class="container">
-                <div class="text-primary fw-700 fs-2">Contact Us</div>
+                <div class="heading text-primary fw-700 fs-2">Contact Us</div>
                 <div class="fw-600 fs-11 text-white">Simply complete our form below &amp; we'll get back to you as soon as possible</div>
-                <div class="pt-6 pb-5 fw-700 fs-6 text-primary font-raleway">Let us know what you are looking for?</div>
-                <div class="row g-md-5">
+                <div class="pt-5 pt-md-6 pb-4 pb-md-5 fw-700 fs-6 text-primary font-raleway">Let us know what you are looking for?</div>
+                <div class="row gy-4 g-md-5">
                     <div class="col-md-6">
                         <label>What Custom jewellery are you interested in?*</label>
                         <input type="text" placeholder="Bracelet" class="form-control" name="jewelleryType" required>
@@ -473,8 +503,8 @@ include __DIR__ . '/header.php';
         </div>
         <div class="section_2">
             <div class="container">
-                <div class="font-raleway text-white fw-700 fs-6 pb-5">High-End Custom Work &amp; Exclusive Piece Details</div>
-                <div class="row g-md-5">
+                <div class="heading font-raleway text-white fw-700 fs-6 pb-5">High-End Custom Work &amp; Exclusive Piece Details</div>
+                <div class="row gy-4 g-md-5">
                     <div class="col-md-6">
                         <label>What type of Clarity</label>
                         <div class="select-wrapper">
@@ -507,8 +537,8 @@ include __DIR__ . '/header.php';
                     </div>
                 </div>
                 <hr>
-                <div class="font-raleway text-white fw-700 fs-6 pb-5">Your Contact Information</div>
-                <div class="row g-md-5">
+                <div class="heading font-raleway text-white fw-700 fs-6 pb-5">Your Contact Information</div>
+                <div class="row gy-4 g-md-5">
                     <div class="col-md-6">
                         <label>Full Name</label>
                         <input type="text" placeholder="John Citizen" class="form-control" name="name" required>
