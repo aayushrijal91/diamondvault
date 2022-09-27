@@ -409,112 +409,65 @@ include __DIR__ . '/header.php';
 </section>
 
 <section class="diamond-variety">
-    <div class="container-fluid px-lg-0">
-        <div class="row justify-content-center gx-lg-0">
-            <div class="col-md-6 col-xl-4 h-inherit px-0">
+    <div class="container">
+        <div class="row justify-content-center gx-xl-5">
+            <div class="col-md-6 col-xl-4 h-inherit">
                 <div class="variety-card">
-                    <?= renderImg('watches.jpg', 'lib', "w-100 h-100") ?>
-                    <div class="button">
-                        <a href="#" class="btn btn-primary px-xl-5">
-                            <span class="pe-3 text-capitalize fw-600">Enquire about Watches</span> <svg width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4393 20.5607C17.0251 21.1464 17.9749 21.1464 18.5607 20.5607L27.5607 11.5607C28.1464 10.9749 28.1464 10.0251 27.5607 9.43934L18.5607 0.43934C17.9749 -0.146447 17.0251 -0.146447 16.4393 0.43934C15.8536 1.02513 15.8536 1.97487 16.4393 2.56066L24.3787 10.5L16.4393 18.4393C15.8536 19.0251 15.8536 19.9749 16.4393 20.5607Z" fill="white" />
-                                <path d="M0 10.5C0 9.67157 0.671573 9 1.5 9H24.5C25.3284 9 26 9.67157 26 10.5C26 11.3284 25.3284 12 24.5 12H1.5C0.671572 12 0 11.3284 0 10.5Z" fill="white" />
-                            </svg>
-                        </a>
-                    </div>
+                    <?= renderImg('variety-1.jpg', 'lib', "w-100") ?>
+                    <div class="caption">Diamond Setting Watches</div>
                 </div>
             </div>
-            <div class="col-md-6 col-xl-4 h-inherit px-0">
+            <div class="col-md-6 col-xl-4 h-inherit">
                 <div class="variety-card">
-                    <?= renderImg('bracelets.jpg', 'lib', "w-100") ?>
-                    <div class="button">
-                        <a href="#" class="btn btn-primary px-xl-5">
-                            <span class="pe-3 text-capitalize fw-600">See Our Bracelets</span> <svg width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4393 20.5607C17.0251 21.1464 17.9749 21.1464 18.5607 20.5607L27.5607 11.5607C28.1464 10.9749 28.1464 10.0251 27.5607 9.43934L18.5607 0.43934C17.9749 -0.146447 17.0251 -0.146447 16.4393 0.43934C15.8536 1.02513 15.8536 1.97487 16.4393 2.56066L24.3787 10.5L16.4393 18.4393C15.8536 19.0251 15.8536 19.9749 16.4393 20.5607Z" fill="white" />
-                                <path d="M0 10.5C0 9.67157 0.671573 9 1.5 9H24.5C25.3284 9 26 9.67157 26 10.5C26 11.3284 25.3284 12 24.5 12H1.5C0.671572 12 0 11.3284 0 10.5Z" fill="white" />
-                            </svg>
-                        </a>
-                    </div>
+                    <?= renderImg('variety-2.jpg', 'lib', "w-100") ?>
+                    <div class="caption">See our Bracelets</div>
                 </div>
             </div>
-            <div class="col-md-6 col-xl-4 h-inherit px-0">
+            <div class="col-md-6 col-xl-4 h-inherit">
                 <div class="variety-card">
-                    <?= renderImg('rings.jpg', 'lib', "w-100 h-100") ?>
-                    <div class="button">
-                        <a href="#" class="btn btn-primary px-xl-5">
-                            <span class="pe-3 text-capitalize fw-600">Engagement Rings</span> <svg width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4393 20.5607C17.0251 21.1464 17.9749 21.1464 18.5607 20.5607L27.5607 11.5607C28.1464 10.9749 28.1464 10.0251 27.5607 9.43934L18.5607 0.43934C17.9749 -0.146447 17.0251 -0.146447 16.4393 0.43934C15.8536 1.02513 15.8536 1.97487 16.4393 2.56066L24.3787 10.5L16.4393 18.4393C15.8536 19.0251 15.8536 19.9749 16.4393 20.5607Z" fill="white" />
-                                <path d="M0 10.5C0 9.67157 0.671573 9 1.5 9H24.5C25.3284 9 26 9.67157 26 10.5C26 11.3284 25.3284 12 24.5 12H1.5C0.671572 12 0 11.3284 0 10.5Z" fill="white" />
-                            </svg>
-                        </a>
-                    </div>
+                    <?= renderImg('variety-3.jpg', 'lib', "w-100") ?>
+                    <div class="caption">Engagement Rings</div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="watch-collection">
-    <div class="container">
-        <div class="row align-items-center position-relative">
-            <div class="col-lg h-inherit d-none d-md-block"><?= renderImg("slider-hero-watch.png", 'lib') ?></div>
-            <div class="col-lg-6 col-xl-5 h-inherit">
-                <div class="row align-items-center gx-2 gx-xl-5">
-                    <div class="col-11">
-                        <div class="watches-slider" id="watches-slider">
-                            <div class="watch-slider-content">
-                                <div class="heading font-maiah text-center letter-spacing-n04 fs-4 fw-600">Our Watches</div>
-                                <div class="watch-platform">
-                                    <?= renderImg("rolex-watch.png", "lib") ?>
-                                </div>
-                                <div class="row justify-content-between align-items-center">
-                                    <div class="col-auto">
-                                        <div class="fs-12 fw-600">Submariner</div>
-                                        <div class="fs-14 text-grey text-uppercase">Rolex</div>
-                                    </div>
-                                    <div class="col-auto">
-                                        <a href="#" class="p-0 text-primary text-decoration-none fs-12 fw-600">Enquire</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="watch-slider-content">
-                                <div class="font-maiah text-center letter-spacing-n04 fs-4 fw-600">Our Watches</div>
-                                <div class="watch-platform">
-                                    <?= renderImg("rolex-watch.png", "lib") ?>
-                                </div>
-                                <div class="row justify-content-between align-items-center">
-                                    <div class="col-auto">
-                                        <div class="fs-12 fw-600">Submariner</div>
-                                        <div class="fs-14 text-grey text-uppercase">Rolex</div>
-                                    </div>
-                                    <div class="col-auto">
-                                        <a href="#" class="p-0 text-primary text-decoration-none fs-12 fw-600">Enquire</a>
-                                    </div>
-                                </div>
-                            </div>
+<section class="our-watches">
+    <div class="container-fluid">
+        <div class="row justify-content-end">
+            <div class="col-lg-5"><?= renderImg('our-watches.jpg', 'lib', 'w-100') ?></div>
+            <div class="col-lg-6">
+                <div class="watch-collection">
+                    <div class="heading font-maiah text-uppercase letter-spacing-n04 fs-4 fw-600 text-white">Our Watches</div>
+                    <div class="watch-slider" id="watch-slider">
+                        <div class="watch-slider-content">
+                            <div class="title">Rolex</div>
+                            <div class="pillow"><?= renderImg('watch-1.png', "lib") ?></div>
                         </div>
-                    </div>
-                    <div class="col-1 text-center">
-                        <div class="watch-arrows">
-                            <div id="arrow-top" class="pb-5">
-                                <svg width="14" height="37" viewBox="0 0 14 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g opacity="0.7">
-                                        <path d="M1 7L7 1L13 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        <rect x="8" y="37" width="2" height="36" rx="1" transform="rotate(-180 8 37)" fill="white" />
-                                    </g>
-                                </svg>
-                            </div>
-                            <div id="arrow-bottom" class="pt-5">
-                                <svg width="14" height="37" viewBox="0 0 14 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13 30L7 36L1 30" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    <rect x="6" width="2" height="36" rx="1" fill="white" />
-                                </svg>
-                            </div>
+                        <div class="watch-slider-content">
+                            <div class="title">Frank Muller</div>
+                            <div class="pillow"><?= renderImg('watch-2.png', "lib") ?></div>
+                        </div>
+                        <div class="watch-slider-content">
+                            <div class="title">Cartier</div>
+                            <div class="pillow"><?= renderImg('watch-3.png', "lib") ?></div>
+                        </div>
+                        <div class="watch-slider-content">
+                            <div class="title">Audemars Piguet</div>
+                            <div class="pillow"><?= renderImg('watch-4.png', "lib") ?></div>
+                        </div>
+                        <div class="watch-slider-content">
+                            <div class="title">Hublot</div>
+                            <div class="pillow"><?= renderImg('watch-5.png', "lib") ?></div>
+                        </div>
+                        <div class="watch-slider-content">
+                            <div class="title">Breitling</div>
+                            <div class="pillow"><?= renderImg('watch-6.png', "lib") ?></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg h-inherit d-md-none"><?= renderImg("slider-hero-watch-sm.png", 'lib') ?></div>
         </div>
     </div>
 </section>

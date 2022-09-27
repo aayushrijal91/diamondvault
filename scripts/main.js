@@ -51,13 +51,12 @@ $(() => {
             }
         ]
     });
-
-    $("#watches-slider").slick({
-        slidesToShow: 1,
-        vertical: true,
+    
+    $('#watch-slider').slick({
+        slidesToShow: 3,
         slidesToScroll: 1,
-        prevArrow: $("#arrow-top"),
-        nextArrow: $("#arrow-bottom"),
+        arrows: false,
+        autoplay: true,
     });
 });
 

@@ -157,7 +157,7 @@ section.custom-diamond {
         padding: 95px 0 142px;
         background: imgUrl("custom-watch.png") right center;
         background-size: contain;
-        
+
         @include media-breakpoint-only(lg) {
             padding: 24px 0;
         }
@@ -224,7 +224,7 @@ section.diamond-collection {
         .tab-content {
             .diamond-choice {
                 padding-top: 261px;
-                
+
                 .diamond-type-toggle {
                     color: $white;
                     text-decoration: none;
@@ -233,28 +233,28 @@ section.diamond-collection {
                     align-items: center;
                     font-size: 21px;
                 }
-        
+
                 hr {
                     margin: 0;
                     border-color: $white;
                 }
-        
-                .nav {        
+
+                .nav {
                     ul.diamond-type-dropdown-menu {
                         list-style: none;
                         padding-inline-start: 0;
                         display: none;
-        
+
                         li {
                             .nav-link {
                                 font-size: 1.125rem;
                                 padding: 0;
                                 line-height: 2;
                                 margin: 0 auto;
-        
+
                                 &.active {
                                     padding-left: 0;
-        
+
                                     &::before {
                                         content: "";
                                     }
@@ -262,7 +262,7 @@ section.diamond-collection {
                             }
                         }
                     }
-        
+
                     .nav-link {
                         background: none;
                         font-family: $font-maiah;
@@ -271,14 +271,14 @@ section.diamond-collection {
                         text-align: start;
                         padding: 21.5px 0;
                         line-height: 1;
-        
+
                         &.active {
                             padding-left: 42px;
                             font-size: 3.125rem;
                             color: $white;
                             letter-spacing: -0.04em;
                             position: relative;
-        
+
                             &::before {
                                 content: "-";
                                 position: absolute;
@@ -294,78 +294,62 @@ section.diamond-collection {
 }
 
 section.diamond-variety {
+    padding: 277px 0 124px;
+
     .variety-card {
-        position: relative;
-        display: flex;
-        justify-content: center;
-
-        .button {
-            position: absolute;
-            bottom: 6.125rem;
-
-            @include media-breakpoint-down(sm) {
-                bottom: 56px;
-
-                a {
-                    height: 38px;
-                    font-size: 0.875rem;
-                    display: inline;
-                    padding: 11px 24px;
-                }
-            }
+        .caption {
+            text-align: center;
+            font-size: 1.3125rem;
+            padding-top: 33px;
+            color: $white;
+            font-weight: 300;
         }
     }
 }
 
-section.watch-collection {
-    padding: 142px 0;
-    background: #030307;
-    position: relative;
+section.our-watches {
+    background: $black;
 
-    @include media-breakpoint-down(sm) {
-        padding: 102px 0 30px;
-    }
+    .watch-collection {
+        padding: 164px 0;
 
-    .watches-slider {
-        background-color: $white;
-
-        .watch-slider-content {
-            padding: 56px 71px 67px;
-
-            @include media-breakpoint-only(lg) {
-                padding: 24px;
+        .watch-slider {
+            .slick-slide {
+                margin: 0 19px;
             }
 
-            @include media-breakpoint-down(sm) {
-                padding: 18px 11px 22px;
+            .watch-slider-content {
+                .title {
+                    color: #ABABAB;
+                    font-size: 1.3125rem;
+                    font-weight: 300;
+                }
 
-                .heading {
-                    font-size: 2.25rem !important;
+                .pillow {
+                    background: #060606;
+                    box-shadow: inset 1px 5px 10px rgba(255, 255, 255, 0.05);
+                    border-radius: 10px;
+                    padding: 0 24px;
+                    margin: 71px 0;
+
+                    img {
+                        transition: 0.2s all ease-in-out;
+                    }
+                }
+
+                &.slick-current.slick-active {
+                    .title {
+                        border-bottom: 1px solid $primary;
+                        color: $white;
+                        display: inline;
+                    }
+
+                    .pillow img{
+                        transform: scale(1.15);
+                        transition: 0.2s all ease-in-out;
+                    }
                 }
             }
-
-            .watch-platform {
-                background-color: #f8f8f8;
-                min-height: 416px;
-                text-align: center;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 24px;
-                margin: 23px 0 32px;
-
-                img {
-                    height: 100%;
-                }
-            }
-        }
-    }
-
-    .watch-arrows {
-        cursor: pointer;
-
-        @include media-breakpoint-up(xl) {
-            left: 103%;
         }
     }
 }
@@ -450,12 +434,12 @@ section.faq {
         padding: 0 1rem 24px;
         line-height: 2;
         font-size: 0.875rem;
-        
+
         @include media-breakpoint-up(md) {
             font-size: 1rem;
             padding: 0 50px 32px;
         }
-        
+
         @include media-breakpoint-up(lg) {
             font-size: 1.25rem; // 20px
             padding: 0 170px 55px;
