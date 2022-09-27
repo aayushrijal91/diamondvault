@@ -1,4 +1,4 @@
-# Landing page [Boilerplate](www.aiims.com.au)
+# Landing page [The Diamond Vault](www.aiims.com.au)
 
 This is a landing page boilerplate that uses PHP scripting language
 
@@ -9,7 +9,7 @@ Developer: [Aayush Rijal](https://www.aayushrijal.net)
 Contact: 0452637371
 
 [Github]()
-[Figma]()
+[Figma](https://www.figma.com/file/1xHdxVRXf44p9yzblFFDhr/The-Diamond-Vault-Landing-Page?node-id=1%3A82)
 
 ## _Instruction_
 

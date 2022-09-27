@@ -212,71 +212,193 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 
-<section class="diamond-type">
+<section class="diamond-collection">
     <div class="container">
-        <div class="heading text-center text-uppercase letter-spacing-02 font-maiah fs-4 fw-600 pb-5 pb-md-6">Diamond Cuts</div>
-        <div class="diamond-choice">
-            <div class="row justify-content-center">
-                <div class="col-11">
-                    <div class="d-none d-lg-block letter-spacing-n04 fs-11 fw-300 py-4">Choose a Diamond Cut</div>
-
-                    <div class="d-lg-none">
-                        <a class="diamond-type-toggle pb-4" id="diamond-type-toggle" href="javascript:void(0)">
-                            <div>Choose a Diamond Cut</div>
-                            <div>
-                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292894C-0.0976315 0.683418 -0.0976315 1.31658 0.292893 1.70711L6.29289 7.70711C6.68342 8.09763 7.31658 8.09763 7.70711 7.70711L13.7071 1.70711C14.0976 1.31658 14.0976 0.683418 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L7 5.58579L1.70711 0.292894C1.31658 -0.0976304 0.683417 -0.0976304 0.292893 0.292894Z" fill="white" />
-                                </svg>
+        <div class="heading text-center text-uppercase letter-spacing-02 font-maiah fs-4 fw-600 pb-5 pb-md-6">Our Collection</div>
+        <div class="diamond-choices-wrapper">
+            <ul class="nav nav-tabs diamond-choices-nav-tabs" id="diamond-choices" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="diamond-cuts-tab" data-bs-toggle="tab" data-bs-target="#diamond-cuts" type="button" role="tab" aria-controls="diamond-cuts" aria-selected="true">Diamond Cuts</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="rings-tab" data-bs-toggle="tab" data-bs-target="#rings" type="button" role="tab" aria-controls="rings" aria-selected="false">Rings</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="necklaces-tab" data-bs-toggle="tab" data-bs-target="#necklaces" type="button" role="tab" aria-controls="necklaces" aria-selected="false">Necklaces</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pendants-tab" data-bs-toggle="tab" data-bs-target="#pendants" type="button" role="tab" aria-controls="pendants" aria-selected="false">Pendants</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="bracelets-tab" data-bs-toggle="tab" data-bs-target="#bracelets" type="button" role="tab" aria-controls="bracelets" aria-selected="false">Bracelets</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="diamond-cuts" role="tabpanel" aria-labelledby="diamond-cuts-tab">
+                    <div class="diamond-choice">
+                        <div class="row">
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="nav flex-column nav-pills" id="v-diamond-cuts-nav" role="tablist" aria-orientation="vertical">
+                                    <button class="nav-link active" id="v-diamond-cuts-cushion-tab" data-bs-toggle="pill" data-bs-target="#v-diamond-cuts-cushion" type="button" role="tab" aria-controls="v-diamond-cuts-cushion" aria-selected="true">Cushion</button>
+                                    <button class="nav-link" id="v-diamond-cuts-radient-tab" data-bs-toggle="pill" data-bs-target="#v-diamond-cuts-radient" type="button" role="tab" aria-controls="v-diamond-cuts-radient" aria-selected="false">Radient</button>
+                                    <button class="nav-link" id="v-diamond-cuts-princess-tab" data-bs-toggle="pill" data-bs-target="#v-diamond-cuts-princess" type="button" role="tab" aria-controls="v-diamond-cuts-princess" aria-selected="false">Princess</button>
+                                    <button class="nav-link" id="v-diamond-cuts-round-tab" data-bs-toggle="pill" data-bs-target="#v-diamond-cuts-round" type="button" role="tab" aria-controls="v-diamond-cuts-round" aria-selected="false">Round</button>
+                                    <button class="nav-link" id="v-diamond-cuts-oval-tab" data-bs-toggle="pill" data-bs-target="#v-diamond-cuts-oval" type="button" role="tab" aria-controls="v-diamond-cuts-oval" aria-selected="false">Oval</button>
+                                    <button class="nav-link" id="v-diamond-cuts-pear-tab" data-bs-toggle="pill" data-bs-target="#v-diamond-cuts-pear" type="button" role="tab" aria-controls="v-diamond-cuts-pear" aria-selected="false">Pear</button>
+                                    <button class="nav-link" id="v-diamond-cuts-emerald-tab" data-bs-toggle="pill" data-bs-target="#v-diamond-cuts-emerald" type="button" role="tab" aria-controls="v-diamond-cuts-emerald" aria-selected="false">Emerald</button>
+                                </div>
                             </div>
-                        </a>
-                        <hr>
-                        <div class="nav flex-column nav-pills" id="v-pills-tab-sm" role="tablist" aria-orientation="vertical">
-                            <ul class="diamond-type-dropdown-menu">
-                                <li><button class="nav-link active" id="v-pills-cushion-tab-sm" data-bs-toggle="pill" data-bs-target="#v-pills-cushion" type="button" role="tab" aria-controls="v-pills-cushion" aria-selected="true">Cushion</button></li>
-                                <li><button class="nav-link" id="v-pills-radient-tab-sm" data-bs-toggle="pill" data-bs-target="#v-pills-radient" type="button" role="tab" aria-controls="v-pills-radient" aria-selected="false">Radient</button></li>
-                                <li><button class="nav-link" id="v-pills-princess-tab-sm" data-bs-toggle="pill" data-bs-target="#v-pills-princess" type="button" role="tab" aria-controls="v-pills-princess" aria-selected="false">Princess</button></li>
-                                <li><button class="nav-link" id="v-pills-round-tab-sm" data-bs-toggle="pill" data-bs-target="#v-pills-round" type="button" role="tab" aria-controls="v-pills-round" aria-selected="false">Round</button></li>
-                                <li><button class="nav-link" id="v-pills-oval-tab-sm" data-bs-toggle="pill" data-bs-target="#v-pills-oval" type="button" role="tab" aria-controls="v-pills-oval" aria-selected="false">Oval</button></li>
-                                <li><button class="nav-link" id="v-pills-pear-tab-sm" data-bs-toggle="pill" data-bs-target="#v-pills-pear" type="button" role="tab" aria-controls="v-pills-pear" aria-selected="false">Pear</button></li>
-                                <li><button class="nav-link" id="v-pills-emerald-tab-sm" data-bs-toggle="pill" data-bs-target="#v-pills-emerald" type="button" role="tab" aria-controls="v-pills-emerald" aria-selected="false">Emerald</button></li>
-                            </ul>
+                            <div class="col-lg">
+                                <div class="tab-content" id="v-diamond-cuts-tabContent">
+                                    <div class="tab-pane fade show active" id="v-diamond-cuts-cushion" role="tabpanel" aria-labelledby="v-diamond-cuts-cushion-tab">
+                                        <?= renderImg('cushion.png', 'lib', "w-100") ?>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-diamond-cuts-radient" role="tabpanel" aria-labelledby="v-diamond-cuts-radient-tab">
+                                        <?= renderImg('radiant.png', 'lib', "w-100") ?>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-diamond-cuts-princess" role="tabpanel" aria-labelledby="v-diamond-cuts-princess-tab">
+                                        <?= renderImg('princess.png', 'lib', "w-100") ?>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-diamond-cuts-round" role="tabpanel" aria-labelledby="v-diamond-cuts-round-tab">
+                                        <?= renderImg('round.png', 'lib', "w-100") ?>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-diamond-cuts-oval" role="tabpanel" aria-labelledby="v-diamond-cuts-oval-tab">
+                                        <?= renderImg('oval.png', 'lib', "w-100") ?>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-diamond-cuts-pear" role="tabpanel" aria-labelledby="v-diamond-cuts-pear-tab">
+                                        <?= renderImg('pear.png', 'lib', "w-100") ?>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-diamond-cuts-emerald" role="tabpanel" aria-labelledby="v-diamond-cuts-emerald-tab">
+                                        <?= renderImg('emerald.png', 'lib', "w-100") ?>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <hr class="d-none d-lg-block">
-                    <div class="row">
-                        <div class="col-lg-5 d-none d-lg-block">
-                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <button class="nav-link active" id="v-pills-cushion-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cushion" type="button" role="tab" aria-controls="v-pills-cushion" aria-selected="true">Cushion</button>
-                                <button class="nav-link" id="v-pills-radient-tab" data-bs-toggle="pill" data-bs-target="#v-pills-radient" type="button" role="tab" aria-controls="v-pills-radient" aria-selected="false">Radient</button>
-                                <button class="nav-link" id="v-pills-princess-tab" data-bs-toggle="pill" data-bs-target="#v-pills-princess" type="button" role="tab" aria-controls="v-pills-princess" aria-selected="false">Princess</button>
-                                <button class="nav-link" id="v-pills-round-tab" data-bs-toggle="pill" data-bs-target="#v-pills-round" type="button" role="tab" aria-controls="v-pills-round" aria-selected="false">Round</button>
-                                <button class="nav-link" id="v-pills-oval-tab" data-bs-toggle="pill" data-bs-target="#v-pills-oval" type="button" role="tab" aria-controls="v-pills-oval" aria-selected="false">Oval</button>
-                                <button class="nav-link" id="v-pills-pear-tab" data-bs-toggle="pill" data-bs-target="#v-pills-pear" type="button" role="tab" aria-controls="v-pills-pear" aria-selected="false">Pear</button>
-                                <button class="nav-link" id="v-pills-emerald-tab" data-bs-toggle="pill" data-bs-target="#v-pills-emerald" type="button" role="tab" aria-controls="v-pills-emerald" aria-selected="false">Emerald</button>
+                </div>
+                <div class="tab-pane fade" id="rings" role="tabpanel" aria-labelledby="rings-tab">
+                    <div class="diamond-choice">
+                        <div class="row">
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="nav flex-column nav-pills" id="v-rings-nav" role="tablist" aria-orientation="vertical">
+                                    <button class="nav-link active" id="v-rings-engagement-tab" data-bs-toggle="pill" data-bs-target="#v-rings-engagement" type="button" role="tab" aria-controls="v-rings-engagement" aria-selected="true">Engagement Ring</button>
+                                    <button class="nav-link" id="v-rings-diamond-tab" data-bs-toggle="pill" data-bs-target="#v-rings-diamond" type="button" role="tab" aria-controls="v-rings-diamond" aria-selected="false">Diamond Rings</button>
+                                    <button class="nav-link" id="v-rings-wedding-tab" data-bs-toggle="pill" data-bs-target="#v-rings-wedding" type="button" role="tab" aria-controls="v-rings-wedding" aria-selected="false">Wedding Bands</button>
+                                    <button class="nav-link" id="v-rings-custom-tab" data-bs-toggle="pill" data-bs-target="#v-rings-custom" type="button" role="tab" aria-controls="v-rings-custom" aria-selected="false">Custom Rings</button>
+                                    <button class="nav-link" id="v-rings-cartier-nail-tab" data-bs-toggle="pill" data-bs-target="#v-rings-cartier-nail" type="button" role="tab" aria-controls="v-rings-cartier-nail" aria-selected="false">Cartier Nail Rings</button>
+                                </div>
+                            </div>
+                            <div class="col-lg">
+                                <div class="tab-content" id="v-rings-tabContent">
+                                    <div class="tab-pane fade show active" id="v-rings-engagement" role="tabpanel" aria-labelledby="v-rings-engagement-tab">
+                                        <?= renderImg('engagement-rings.png', 'lib', "w-100") ?>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-rings-diamond" role="tabpanel" aria-labelledby="v-rings-diamond-tab">
+                                        <?= renderImg('diamond-rings.png', 'lib', "w-100") ?>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-rings-wedding" role="tabpanel" aria-labelledby="v-rings-wedding-tab">
+                                        <?= renderImg('wedding-bands.png', 'lib', "w-100") ?>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-rings-custom" role="tabpanel" aria-labelledby="v-rings-custom-tab">
+                                        <?= renderImg('custom-rings.png', 'lib', "w-100") ?>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-rings-cartier-nail" role="tabpanel" aria-labelledby="v-rings-cartier-nail-tab">
+                                        <?= renderImg('cartier-nail-ring.png', 'lib', "w-100") ?>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-7">
-                            <div class="tab-content" id="v-pills-tabContent">
-                                <div class="tab-pane fade show active" id="v-pills-cushion" role="tabpanel" aria-labelledby="v-pills-cushion-tab">
-                                    <?= renderImg('radiant-diamond.png', 'lib', "w-100") ?>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="necklaces" role="tabpanel" aria-labelledby="necklaces-tab">
+                    <div class="diamond-choice">
+                        <div class="row">
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="nav flex-column nav-pills" id="v-necklaces-nav" role="tablist" aria-orientation="vertical">
+                                    <button class="nav-link active" id="v-necklaces-cubanPlain-tab" data-bs-toggle="pill" data-bs-target="#v-necklaces-cubanPlain" type="button" role="tab" aria-controls="v-necklaces-cubanPlain" aria-selected="true">Cuban (Plain)</button>
+                                    <button class="nav-link" id="v-necklaces-cubanDiamond-tab" data-bs-toggle="pill" data-bs-target="#v-necklaces-cubanDiamond" type="button" role="tab" aria-controls="v-necklaces-cubanDiamond" aria-selected="false">Cuban (Diamond)</button>
+                                    <button class="nav-link" id="v-necklaces-plainGold-tab" data-bs-toggle="pill" data-bs-target="#v-necklaces-plainGold" type="button" role="tab" aria-controls="v-necklaces-plainGold" aria-selected="false">Plain Gold Chains</button>
+                                    <button class="nav-link" id="v-necklaces-diamond-tab" data-bs-toggle="pill" data-bs-target="#v-necklaces-diamond" type="button" role="tab" aria-controls="v-necklaces-diamond" aria-selected="false">Diamond Chains</button>
+                                    <button class="nav-link" id="v-necklaces-rope-tab" data-bs-toggle="pill" data-bs-target="#v-necklaces-rope" type="button" role="tab" aria-controls="v-necklaces-rope" aria-selected="false">Rope Chains</button>
                                 </div>
-                                <div class="tab-pane fade" id="v-pills-radient" role="tabpanel" aria-labelledby="v-pills-radient-tab">
-                                    <?= renderImg('radiant-diamond.png', 'lib', "w-100") ?>
+                            </div>
+                            <div class="col-lg">
+                                <div class="tab-content" id="v-necklaces-tabContent">
+                                    <div class="tab-pane fade show active" id="v-necklaces-cubanPlain" role="tabpanel" aria-labelledby="v-necklaces-cubanPlain-tab">
+                                        <?= renderImg('cubanPlain-necklaces.png', 'lib', "w-100") ?>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-necklaces-cubanDiamond" role="tabpanel" aria-labelledby="v-necklaces-cubanDiamond-tab">
+                                        <?= renderImg('cubanDiamond-necklaces.png', 'lib', "w-100") ?>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-necklaces-plainGold" role="tabpanel" aria-labelledby="v-necklaces-plainGold-tab">
+                                        <?= renderImg('plainGold-chains.png', 'lib', "w-100") ?>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-necklaces-diamond" role="tabpanel" aria-labelledby="v-necklaces-diamond-tab">
+                                        <?= renderImg('diamond-chain-necklaces.png', 'lib', "w-100") ?>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-necklaces-rope" role="tabpanel" aria-labelledby="v-necklaces-rope-tab">
+                                        <?= renderImg('rope-chains.png', 'lib', "w-100") ?>
+                                    </div>
                                 </div>
-                                <div class="tab-pane fade" id="v-pills-princess" role="tabpanel" aria-labelledby="v-pills-princess-tab">
-                                    <?= renderImg('radiant-diamond.png', 'lib', "w-100") ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pendants" role="tabpanel" aria-labelledby="pendants-tab">
+                    <div class="diamond-choice">
+                        <div class="row">
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="nav flex-column nav-pills" id="v-pendants-nav" role="tablist" aria-orientation="vertical">
+                                    <button class="nav-link active" id="v-pendants-custom-tab" data-bs-toggle="pill" data-bs-target="#v-pendants-custom" type="button" role="tab" aria-controls="v-pendants-custom" aria-selected="true">Custom</button>
                                 </div>
-                                <div class="tab-pane fade" id="v-pills-round" role="tabpanel" aria-labelledby="v-pills-round-tab">
-                                    <?= renderImg('radiant-diamond.png', 'lib', "w-100") ?>
+                            </div>
+                            <div class="col-lg">
+                                <div class="tab-content" id="v-pendants-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pendants-custom" role="tabpanel" aria-labelledby="v-pendants-custom-tab">
+                                        <?= renderImg('custom-pendants.png', 'lib', "w-100") ?>
+                                    </div>
                                 </div>
-                                <div class="tab-pane fade" id="v-pills-oval" role="tabpanel" aria-labelledby="v-pills-oval-tab">
-                                    <?= renderImg('radiant-diamond.png', 'lib', "w-100") ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="bracelets" role="tabpanel" aria-labelledby="bracelets-tab">
+                    <div class="diamond-choice">
+                        <div class="row">
+                            <div class="col-lg-4 d-none d-lg-block">
+                                <div class="nav flex-column nav-pills" id="v-bracelets-nav" role="tablist" aria-orientation="vertical">
+                                    <button class="nav-link active" id="v-bracelets-tennisChains-tab" data-bs-toggle="pill" data-bs-target="#v-bracelets-tennisChains" type="button" role="tab" aria-controls="v-bracelets-tennisChains" aria-selected="true">Tennis Chains</button>
+                                    <button class="nav-link" id="v-bracelets-tennis-tab" data-bs-toggle="pill" data-bs-target="#v-bracelets-tennis" type="button" role="tab" aria-controls="v-bracelets-tennis" aria-selected="false">Tennis Bracelets</button>
+                                    <button class="nav-link" id="v-bracelets-cuban-tab" data-bs-toggle="pill" data-bs-target="#v-bracelets-cuban" type="button" role="tab" aria-controls="v-bracelets-cuban" aria-selected="false">Cuban</button>
+                                    <button class="nav-link" id="v-bracelets-bangles-tab" data-bs-toggle="pill" data-bs-target="#v-bracelets-bangles" type="button" role="tab" aria-controls="v-bracelets-bangles" aria-selected="false">Bangles</button>
+                                    <button class="nav-link" id="v-bracelets-diamond-tab" data-bs-toggle="pill" data-bs-target="#v-bracelets-diamond" type="button" role="tab" aria-controls="v-bracelets-diamond" aria-selected="false">Diamond Bangles</button>
+                                    <button class="nav-link" id="v-bracelets-cartier-love-tab" data-bs-toggle="pill" data-bs-target="#v-bracelets-cartier-love" type="button" role="tab" aria-controls="v-bracelets-cartier-love" aria-selected="false">Cartier Love Bracelet</button>
+                                    <button class="nav-link" id="v-bracelets-cartier-nail-tab" data-bs-toggle="pill" data-bs-target="#v-bracelets-cartier-nail" type="button" role="tab" aria-controls="v-bracelets-cartier-nail" aria-selected="false">Cartier Nail</button>
                                 </div>
-                                <div class="tab-pane fade" id="v-pills-pear" role="tabpanel" aria-labelledby="v-pills-pear-tab">
-                                    <?= renderImg('radiant-diamond.png', 'lib', "w-100") ?>
-                                </div>
-                                <div class="tab-pane fade" id="v-pills-emerald" role="tabpanel" aria-labelledby="v-pills-emerald-tab">
-                                    <?= renderImg('radiant-diamond.png', 'lib', "w-100") ?>
+                            </div>
+                            <div class="col-lg">
+                                <div class="tab-content" id="v-bracelets-tabContent">
+                                    <div class="tab-pane fade show active" id="v-bracelets-tennisChains" role="tabpanel" aria-labelledby="v-bracelets-tennisChains-tab">
+                                        <?= renderImg('tennis-chain-bracelets.png', 'lib', "w-100") ?>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-bracelets-tennis" role="tabpanel" aria-labelledby="v-bracelets-tennis-tab">
+                                        <?= renderImg('tennis-bracelets.png', 'lib', "w-100") ?>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-bracelets-cuban" role="tabpanel" aria-labelledby="v-bracelets-cuban-tab">
+                                        <?= renderImg('cuban-bracelets.png', 'lib', "w-100") ?>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-bracelets-bangles" role="tabpanel" aria-labelledby="v-bracelets-bangles-tab">
+                                        <?= renderImg('bangles.png', 'lib', "w-100") ?>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-bracelets-diamond" role="tabpanel" aria-labelledby="v-bracelets-diamond-tab">
+                                        <?= renderImg('diamond-bangles.png', 'lib', "w-100") ?>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-bracelets-cartier-love" role="tabpanel" aria-labelledby="v-bracelets-cartier-love-tab">
+                                        <?= renderImg('cartier-love-bracelets.png', 'lib', "w-100") ?>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-bracelets-cartier-nail" role="tabpanel" aria-labelledby="v-bracelets-cartier-nail-tab">
+                                        <?= renderImg('cartier-nail-bracelets.png', 'lib', "w-100") ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
