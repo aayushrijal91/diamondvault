@@ -165,25 +165,25 @@ include __DIR__ . '/header.php';
                 <div class="product-card">
                     <?= renderImg('diamond-engagement-ring.png', 'lib') ?>
                 </div>
-                <div class="caption">Cartier Love Bracelet</div>
+                <div class="caption">Diamond Engagement Ring</div>
             </div>
             <div class="product-slider-content">
                 <div class="product-card">
                     <?= renderImg('cartier-watch.png', 'lib') ?>
                 </div>
-                <div class="caption">Cartier Love Bracelet</div>
+                <div class="caption">Santos De Cartier Watch</div>
             </div>
             <div class="product-slider-content">
                 <div class="product-card">
                     <?= renderImg('juste-un-clou.png', 'lib') ?>
                 </div>
-                <div class="caption">Cartier Love Bracelet</div>
+                <div class="caption">Cartier Juste Un Clou</div>
             </div>
             <div class="product-slider-content">
                 <div class="product-card">
-                    <?= renderImg('juste-un-clou.png', 'lib') ?>
+                    <?= renderImg('diamond-engagement-ring.png', 'lib') ?>
                 </div>
-                <div class="caption">Cartier Love Bracelet</div>
+                <div class="caption">Diamond Engagement Ring</div>
             </div>
         </div>
     </div>
@@ -196,7 +196,7 @@ include __DIR__ . '/header.php';
                 <div class="col-xl-5 text-center">
                     <?= renderImg('custom-diamond.png', 'lib') ?>
                     <div class="heading fs-5 fw-600 text-uppercase font-maiah text-primary letter-spacing-n04 line-height-12 py-5">custom one of a kind jewelry</div>
-                    <div class="description text-secondary">
+                    <div class="description text-white">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.
                     </div>
@@ -215,7 +215,85 @@ include __DIR__ . '/header.php';
 <section class="diamond-collection">
     <div class="container">
         <div class="heading text-center text-uppercase letter-spacing-02 font-maiah fs-4 fw-600 pb-5 pb-md-6">Our Collection</div>
-        <div class="diamond-choices-wrapper">
+        <div class="diamond-choices-wrapper-sm d-xl-none">
+            <div class="filter-collection">
+                <select class="form-control form-select cat1">
+                    <option value="cat-diamond-cuts">Diamond Cuts</option>
+                    <option value="cat-rings">Rings</option>
+                    <option value="cat-necklaces">Necklaces</option>
+                    <option value="cat-pendants">Pendants</option>
+                    <option value="cat-bracelets">Bracelets</option>
+                </select>
+                <select class="form-control form-select cat2 active" id="cat-diamond-cuts">
+                    <option class="cat-diamond-cuts active" value="cat-diamond-cuts-cushion">Cushion</option>
+                    <option class="cat-diamond-cuts active" value="cat-diamond-cuts-radient">Radient</option>
+                    <option class="cat-diamond-cuts active" value="cat-diamond-cuts-princess">Princess</option>
+                    <option class="cat-diamond-cuts active" value="cat-diamond-cuts-round">Round</option>
+                    <option class="cat-diamond-cuts active" value="cat-diamond-cuts-oval">Oval</option>
+                    <option class="cat-diamond-cuts active" value="cat-diamond-cuts-pear">Pear</option>
+                    <option class="cat-diamond-cuts active" value="cat-diamond-cuts-emerald">Emerald</option>
+                </select>
+
+                <select class="form-control form-select mt-4 cat2" id="cat-rings">
+                    <option class="cat-rings" value="cat-rings-engagement-ring">Engagement Ring</option>
+                    <option class="cat-rings" value="cat-rings-diamond-rings">Diamond Rings</option>
+                    <option class="cat-rings" value="cat-rings-wedding-bands">Wedding Bands</option>
+                    <option class="cat-rings" value="cat-rings-custom-rings">Custom Rings</option>
+                    <option class="cat-rings" value="cat-rings-cartier-nail-rings">Cartier Nail Rings</option>
+                    
+                </select>
+
+                <select class="form-control form-select mt-4 cat2" id="cat-necklaces">
+                    <option class="cat-necklaces" value="cat-necklaces-cuban-plain">Cuban (Plain)</option>
+                    <option class="cat-necklaces" value="cat-necklaces-cuban-diamond">Cuban (Diamond)</option>
+                    <option class="cat-necklaces" value="cat-necklaces-plain-gold-chains">Plain Gold Chains</option>
+                    <option class="cat-necklaces" value="cat-necklaces-diamond-chains">Diamond Chains</option>
+                    <option class="cat-necklaces" value="cat-necklaces-rope-chains">Rope Chains</option>
+                </select>
+
+                <select class="form-control form-select mt-4 cat2" id="cat-pendants">
+                    <option class="cat-pendants" value="cat-pendants-custom">Custom</option>
+                </select>
+
+                <select class="form-control form-select mt-4 cat2" id="cat-bracelets">
+                    <option class="cat-bracelets" value="cat-bracelets-tennis-chains">Tennis Chains</option>
+                    <option class="cat-bracelets" value="cat-bracelets-tennis-bracelets">Tennis Bracelets</option>
+                    <option class="cat-bracelets" value="cat-bracelets-cuban">Cuban</option>
+                    <option class="cat-bracelets" value="cat-bracelets-bangles">Bangles</option>
+                    <option class="cat-bracelets" value="cat-bracelets-diamond-bangles">Diamond Bangles</option>
+                    <option class="cat-bracelets" value="cat-bracelets-cartier-love-bracelets">Cartier Love Bracelets</option>
+                    <option class="cat-bracelets" value="cat-bracelets-cartier-nail">Cartier Nail</option>
+                </select>
+            </div>
+            <div class="filter-collection-results pt-6">
+                <div class="f-cat active" data-cat="cat-diamond-cuts" data-cat2="cat-diamond-cuts-cushion"><?= renderImg('diamond-cut-cushion-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-diamond-cuts" data-cat2="cat-diamond-cuts-radient"><?= renderImg('diamond-cut-radiant-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-diamond-cuts" data-cat2="cat-diamond-cuts-princess"><?= renderImg('diamond-cut-princess-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-diamond-cuts" data-cat2="cat-diamond-cuts-round"><?= renderImg('diamond-cut-round-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-diamond-cuts" data-cat2="cat-diamond-cuts-oval"><?= renderImg('diamond-cut-oval-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-diamond-cuts" data-cat2="cat-diamond-cuts-pear"><?= renderImg('diamond-cut-pear-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-diamond-cuts" data-cat2="cat-diamond-cuts-emerald"><?= renderImg('diamond-cut-emerald-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-rings" data-cat2="cat-rings-engagement-ring"><?= renderImg('rings-engagement-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-rings" data-cat2="cat-rings-diamond-rings"><?= renderImg('rings-diamond-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-rings" data-cat2="cat-rings-wedding-bands"><?= renderImg('rings-wedding-bands-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-rings" data-cat2="cat-rings-custom-rings"><?= renderImg('rings-custom-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-rings" data-cat2="cat-rings-cartier-nail-rings"><?= renderImg('rings-cartier-nail-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-necklaces" data-cat2="cat-necklaces-cuban-plain"><?= renderImg('necklace-cuban-plain-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-necklaces" data-cat2="cat-necklaces-cuban-diamond"><?= renderImg('necklace-cuban-diamond-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-necklaces" data-cat2="cat-necklaces-plain-gold-chains"><?= renderImg('necklace-plain-gold-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-necklaces" data-cat2="cat-necklaces-diamond-chains"><?= renderImg('necklace-diamond-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-necklaces" data-cat2="cat-necklaces-rope-chains"><?= renderImg('necklace-rope-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-pendants" data-cat2="cat-pendants-custom"><?= renderImg('pendants-custom-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-bracelets" data-cat2="cat-bracelets-tennis-chains"><?= renderImg('bracelet-tennis-chain-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-bracelets" data-cat2="cat-bracelets-tennis-bracelets"><?= renderImg('bracelet-tennis-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-bracelets" data-cat2="cat-bracelets-cuban"><?= renderImg('bracelet-cuban-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-bracelets" data-cat2="cat-bracelets-bangles"><?= renderImg('bracelet-bangles-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-bracelets" data-cat2="cat-bracelets-diamond-bangles"><?= renderImg('bracelet-diamond-bangles-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-bracelets" data-cat2="cat-bracelets-cartier-love-bracelets"><?= renderImg('bracelet-cartier-love-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-bracelets" data-cat2="cat-bracelets-cartier-nail"><?= renderImg('bracelet-cartier-nail-sm.png', 'lib', "w-100") ?></div>
+            </div>
+        </div>
+        <div class="diamond-choices-wrapper d-none d-xl-block">
             <ul class="nav nav-tabs diamond-choices-nav-tabs" id="diamond-choices" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="diamond-cuts-tab" data-bs-toggle="tab" data-bs-target="#diamond-cuts" type="button" role="tab" aria-controls="diamond-cuts" aria-selected="true">Diamond Cuts</button>
@@ -410,7 +488,7 @@ include __DIR__ . '/header.php';
 
 <section class="diamond-variety">
     <div class="container">
-        <div class="row justify-content-center gx-xl-5">
+        <div class="row justify-content-center gx-xl-5 gy-4">
             <div class="col-md-6 col-xl-4 h-inherit">
                 <div class="variety-card">
                     <?= renderImg('variety-1.jpg', 'lib', "w-100") ?>
@@ -436,10 +514,30 @@ include __DIR__ . '/header.php';
 <section class="our-watches">
     <div class="container-fluid">
         <div class="row justify-content-end">
-            <div class="col-lg-5"><?= renderImg('our-watches.jpg', 'lib', 'w-100') ?></div>
+            <div class="col-lg-5 d-none d-md-block"><?= renderImg('our-watches.jpg', 'lib', 'w-100') ?></div>
             <div class="col-lg-6">
                 <div class="watch-collection">
                     <div class="heading font-maiah text-uppercase letter-spacing-n04 fs-4 fw-600 text-white">Our Watches</div>
+                    <div class="row justify-content-center d-md-none gy-3">
+                        <div class="col-auto">
+                            <div class="watch-slider-goTo active" data-slide="1">Rolex</div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="watch-slider-goTo" data-slide="2">Frank Muller</div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="watch-slider-goTo" data-slide="3">Cartier</div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="watch-slider-goTo" data-slide="4">Audemars Piguet</div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="watch-slider-goTo" data-slide="6">Breitling</div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="watch-slider-goTo" data-slide="5">Hublot</div>
+                        </div>
+                    </div>
                     <div class="watch-slider" id="watch-slider">
                         <div class="watch-slider-content">
                             <div class="title">Rolex</div>
@@ -470,6 +568,7 @@ include __DIR__ . '/header.php';
             </div>
         </div>
     </div>
+    <div class="d-md-none"><?= renderImg('our-watches-sm.png', 'lib', 'w-100') ?></div>
 </section>
 
 <section class="faq" id="faqs">
@@ -477,31 +576,31 @@ include __DIR__ . '/header.php';
     $faqs = [
         "01" => [
             "question" => "What Type of Jewellery do you make?",
-            "answer" => "<p>The Diamond Vault specialises in a range of Custom Made Jewellery.  This includes Wedding and Engagement Rings, Custom Rings, Bracelets, Pendants, Cuban Necklaces & Bracelets, Custom Diamond Watches. Diamond Bracelets, Tennis Bracelets & Rope Chains. We also are available to create any piece you have in mind.</p><p>All our items are custom and made to order. If you would like to know any more information please contact us."
+            "answer" => "<p>The Diamond Vault specialises in a range of Custom Made Jewellery. This includes Wedding and Engagement Rings, Custom Rings, Bracelets, Pendants, Cuban Necklaces & Bracelets, Custom Diamond Watches. Diamond Bracelets, Tennis Bracelets & Rope Chains. We also are available to create any piece you have in mind.</p><p>All our items are custom and made to order. If you would like to know any more information please contact us."
         ],
         "02" => [
             "question" => "Can I talk to a consultant personally?",
-            "answer" => "<p>The Diamond Vault specialises in a range of Custom Made Jewellery.  This includes Wedding and Engagement Rings, Custom Rings, Bracelets, Pendants, Cuban Necklaces & Bracelets, Custom Diamond Watches. Diamond Bracelets, Tennis Bracelets & Rope Chains. We also are available to create any piece you have in mind.</p><p>All our items are custom and made to order. If you would like to know any more information please contact us."
+            "answer" => "<p>The Diamond Vault specialises in a range of Custom Made Jewellery. This includes Wedding and Engagement Rings, Custom Rings, Bracelets, Pendants, Cuban Necklaces & Bracelets, Custom Diamond Watches. Diamond Bracelets, Tennis Bracelets & Rope Chains. We also are available to create any piece you have in mind.</p><p>All our items are custom and made to order. If you would like to know any more information please contact us."
         ],
         "03" => [
             "question" => "Can I customise a piece that is not available on your website?",
-            "answer" => "<p>The Diamond Vault specialises in a range of Custom Made Jewellery.  This includes Wedding and Engagement Rings, Custom Rings, Bracelets, Pendants, Cuban Necklaces & Bracelets, Custom Diamond Watches. Diamond Bracelets, Tennis Bracelets & Rope Chains. We also are available to create any piece you have in mind.</p><p>All our items are custom and made to order. If you would like to know any more information please contact us."
+            "answer" => "<p>The Diamond Vault specialises in a range of Custom Made Jewellery. This includes Wedding and Engagement Rings, Custom Rings, Bracelets, Pendants, Cuban Necklaces & Bracelets, Custom Diamond Watches. Diamond Bracelets, Tennis Bracelets & Rope Chains. We also are available to create any piece you have in mind.</p><p>All our items are custom and made to order. If you would like to know any more information please contact us."
         ],
         "04" => [
             "question" => "Can I customise a piece that is not available on your website?",
-            "answer" => "<p>The Diamond Vault specialises in a range of Custom Made Jewellery.  This includes Wedding and Engagement Rings, Custom Rings, Bracelets, Pendants, Cuban Necklaces & Bracelets, Custom Diamond Watches. Diamond Bracelets, Tennis Bracelets & Rope Chains. We also are available to create any piece you have in mind.</p><p>All our items are custom and made to order. If you would like to know any more information please contact us."
+            "answer" => "<p>The Diamond Vault specialises in a range of Custom Made Jewellery. This includes Wedding and Engagement Rings, Custom Rings, Bracelets, Pendants, Cuban Necklaces & Bracelets, Custom Diamond Watches. Diamond Bracelets, Tennis Bracelets & Rope Chains. We also are available to create any piece you have in mind.</p><p>All our items are custom and made to order. If you would like to know any more information please contact us."
         ],
         "05" => [
             "question" => "What materials do you use?",
-            "answer" => "<p>The Diamond Vault specialises in a range of Custom Made Jewellery.  This includes Wedding and Engagement Rings, Custom Rings, Bracelets, Pendants, Cuban Necklaces & Bracelets, Custom Diamond Watches. Diamond Bracelets, Tennis Bracelets & Rope Chains. We also are available to create any piece you have in mind.</p><p>All our items are custom and made to order. If you would like to know any more information please contact us."
+            "answer" => "<p>The Diamond Vault specialises in a range of Custom Made Jewellery. This includes Wedding and Engagement Rings, Custom Rings, Bracelets, Pendants, Cuban Necklaces & Bracelets, Custom Diamond Watches. Diamond Bracelets, Tennis Bracelets & Rope Chains. We also are available to create any piece you have in mind.</p><p>All our items are custom and made to order. If you would like to know any more information please contact us."
         ],
         "06" => [
             "question" => "Does your jewellery come with a warranty?",
-            "answer" => "<p>The Diamond Vault specialises in a range of Custom Made Jewellery.  This includes Wedding and Engagement Rings, Custom Rings, Bracelets, Pendants, Cuban Necklaces & Bracelets, Custom Diamond Watches. Diamond Bracelets, Tennis Bracelets & Rope Chains. We also are available to create any piece you have in mind.</p><p>All our items are custom and made to order. If you would like to know any more information please contact us."
+            "answer" => "<p>The Diamond Vault specialises in a range of Custom Made Jewellery. This includes Wedding and Engagement Rings, Custom Rings, Bracelets, Pendants, Cuban Necklaces & Bracelets, Custom Diamond Watches. Diamond Bracelets, Tennis Bracelets & Rope Chains. We also are available to create any piece you have in mind.</p><p>All our items are custom and made to order. If you would like to know any more information please contact us."
         ],
         "07" => [
             "question" => "How do I find my Ring sizing?",
-            "answer" => "<p>The Diamond Vault specialises in a range of Custom Made Jewellery.  This includes Wedding and Engagement Rings, Custom Rings, Bracelets, Pendants, Cuban Necklaces & Bracelets, Custom Diamond Watches. Diamond Bracelets, Tennis Bracelets & Rope Chains. We also are available to create any piece you have in mind.</p><p>All our items are custom and made to order. If you would like to know any more information please contact us."
+            "answer" => "<p>The Diamond Vault specialises in a range of Custom Made Jewellery. This includes Wedding and Engagement Rings, Custom Rings, Bracelets, Pendants, Cuban Necklaces & Bracelets, Custom Diamond Watches. Diamond Bracelets, Tennis Bracelets & Rope Chains. We also are available to create any piece you have in mind.</p><p>All our items are custom and made to order. If you would like to know any more information please contact us."
         ],
     ];
 
@@ -580,7 +679,7 @@ include __DIR__ . '/header.php';
         <div class="section_2">
             <div class="container">
                 <div class="heading font-raleway text-white fw-700 fs-6 pb-5">High-End Custom Work &amp; Exclusive Piece Details</div>
-                <div class="row gy-4 g-md-5">
+                <div class="row gy-4 g-xl-5">
                     <div class="col-md-6">
                         <label>What type of Clarity</label>
                         <div class="select-wrapper">
@@ -614,7 +713,7 @@ include __DIR__ . '/header.php';
                 </div>
                 <hr>
                 <div class="heading font-raleway text-white fw-700 fs-6 pb-5">Your Contact Information</div>
-                <div class="row gy-4 g-md-5">
+                <div class="row gy-4 g-xl-5">
                     <div class="col-md-6">
                         <label>Full Name</label>
                         <input type="text" placeholder="John Citizen" class="form-control" name="name" required>

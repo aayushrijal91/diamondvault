@@ -189,11 +189,79 @@ section.diamond-collection {
     padding: 93px 0;
 
     @include media-breakpoint-down(sm) {
-        padding: 76px 0 86px;
+        padding: 64px 0 0;
 
         .heading {
-            font-size: 3.125rem !important;
+            font-size: 2.5rem !important;
             letter-spacing: -0.04em;
+        }
+    }
+
+    .diamond-choices-wrapper-sm {
+        .filter-collection {
+
+            select {
+                background: none;
+                color: $white;
+                border: none;
+                padding: 18px 0 24px;
+                border-bottom: 1px solid $white;
+                border-radius: 0;
+                font-size: 1.625rem;
+
+                &:focus {
+                    box-shadow: none;
+                    outline: none;
+                }
+
+                option {
+                    color: $black;
+                }
+
+                &.form-select {
+                    background: imgUrl('dropdown-arrow.png', 'icons') right 0.75rem center;
+                }
+            }
+
+            select.cat2 {
+                display: none;
+
+                &.active {
+                    display: block;
+                }
+            }
+        }
+
+        .filter-collection-results .f-cat {
+            opacity: 0;
+            display: none;
+
+            &.active {
+                opacity: 1;
+                display: block;
+                -webkit-animation: fadeIn 0.65s ease forwards;
+                animation: fadeIn 0.65s ease forwards;
+            }
+        }
+
+        @-webkit-keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
         }
     }
 
@@ -208,7 +276,7 @@ section.diamond-collection {
                     background: none;
                     border: none;
                     font-family: $font-maiah;
-                    color: #ABABAB;
+                    color: $dark-grey;
                     letter-spacing: -0.04em;
                     font-size: 2.5rem;
                     padding: 0;
@@ -223,7 +291,7 @@ section.diamond-collection {
 
         .tab-content {
             .diamond-choice {
-                padding-top: 261px;
+                padding-top: 161px;
 
                 .diamond-type-toggle {
                     color: $white;
@@ -266,7 +334,7 @@ section.diamond-collection {
                     .nav-link {
                         background: none;
                         font-family: $font-maiah;
-                        color: #ABABAB;
+                        color: $dark-grey;
                         font-size: 2.5rem;
                         text-align: start;
                         padding: 21.5px 0;
@@ -290,11 +358,18 @@ section.diamond-collection {
             }
         }
     }
-
 }
 
 section.diamond-variety {
     padding: 277px 0 124px;
+
+    @include media-breakpoint-down(lg) {
+        padding: 124px 0 80px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: 61px 0 30px;
+    }
 
     .variety-card {
         .caption {
@@ -313,6 +388,23 @@ section.our-watches {
     .watch-collection {
         padding: 164px 0;
 
+        @include media-breakpoint-down(sm) {
+            padding: 40px 0 0;
+
+            .heading {
+                font-size: 2.5rem !important;
+                text-align: center;
+            }
+        }
+
+        .watch-slider-goTo {
+            color: $dark-grey;
+
+            &.active {
+                border-bottom: 1px solid $primary;
+            }
+        }
+
         .watch-slider {
             .slick-slide {
                 margin: 0 19px;
@@ -320,9 +412,13 @@ section.our-watches {
 
             .watch-slider-content {
                 .title {
-                    color: #ABABAB;
+                    color: $dark-grey;
                     font-size: 1.3125rem;
                     font-weight: 300;
+
+                    @include media-breakpoint-down(sm) {
+                        display: none;
+                    }
                 }
 
                 .pillow {
@@ -342,9 +438,13 @@ section.our-watches {
                         border-bottom: 1px solid $primary;
                         color: $white;
                         display: inline;
+
+                        @include media-breakpoint-down(sm) {
+                            display: none;
+                        }
                     }
 
-                    .pillow img{
+                    .pillow img {
                         transform: scale(1.15);
                         transition: 0.2s all ease-in-out;
                     }
