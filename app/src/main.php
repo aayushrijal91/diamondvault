@@ -240,7 +240,7 @@ include __DIR__ . '/header.php';
                     <option class="cat-rings" value="cat-rings-wedding-bands">Wedding Bands</option>
                     <option class="cat-rings" value="cat-rings-custom-rings">Custom Rings</option>
                     <option class="cat-rings" value="cat-rings-cartier-nail-rings">Cartier Nail Rings</option>
-                    
+
                 </select>
 
                 <select class="form-control form-select mt-4 cat2" id="cat-necklaces">
@@ -576,31 +576,27 @@ include __DIR__ . '/header.php';
     $faqs = [
         "01" => [
             "question" => "What Type of Jewellery do you make?",
-            "answer" => "<p>The Diamond Vault specialises in a range of Custom Made Jewellery. This includes Wedding and Engagement Rings, Custom Rings, Bracelets, Pendants, Cuban Necklaces & Bracelets, Custom Diamond Watches. Diamond Bracelets, Tennis Bracelets & Rope Chains. We also are available to create any piece you have in mind.</p><p>All our items are custom and made to order. If you would like to know any more information please contact us."
+            "answer" => "<p>The Diamond Vault specialises in a range of Custom Made Jewellery.  This includes Wedding and Engagement Rings, Custom Rings, Bracelets, Pendants, Cuban Necklaces & Bracelets, Custom Diamond Watches.</p> <p>Diamond Bracelets, Tennis Bracelets & Rope Chains. We also are available to create any piece you have in mind.  All our items are custom and made to order. If you would like to know any more information please contact us.</p>"
         ],
         "02" => [
             "question" => "Can I talk to a consultant personally?",
-            "answer" => "<p>The Diamond Vault specialises in a range of Custom Made Jewellery. This includes Wedding and Engagement Rings, Custom Rings, Bracelets, Pendants, Cuban Necklaces & Bracelets, Custom Diamond Watches. Diamond Bracelets, Tennis Bracelets & Rope Chains. We also are available to create any piece you have in mind.</p><p>All our items are custom and made to order. If you would like to know any more information please contact us."
+            "answer" => "Yes, our consultants are available to go over your custom jewellery. Please reach out to us on Whatsapp or Email and we will book in a consultation with you."
         ],
         "03" => [
             "question" => "Can I customise a piece that is not available on your website?",
-            "answer" => "<p>The Diamond Vault specialises in a range of Custom Made Jewellery. This includes Wedding and Engagement Rings, Custom Rings, Bracelets, Pendants, Cuban Necklaces & Bracelets, Custom Diamond Watches. Diamond Bracelets, Tennis Bracelets & Rope Chains. We also are available to create any piece you have in mind.</p><p>All our items are custom and made to order. If you would like to know any more information please contact us."
+            "answer" => "Yes Absolutely.  We are open to ideas and can help create your custom design."
         ],
         "04" => [
-            "question" => "Can I customise a piece that is not available on your website?",
-            "answer" => "<p>The Diamond Vault specialises in a range of Custom Made Jewellery. This includes Wedding and Engagement Rings, Custom Rings, Bracelets, Pendants, Cuban Necklaces & Bracelets, Custom Diamond Watches. Diamond Bracelets, Tennis Bracelets & Rope Chains. We also are available to create any piece you have in mind.</p><p>All our items are custom and made to order. If you would like to know any more information please contact us."
+            "question" => "What materials do you use?",
+            "answer" => "The Diamond Vault uses Solid Gold, Silver & Platinum. Our products are high quality and we don't use jewellery that is plated."
         ],
         "05" => [
-            "question" => "What materials do you use?",
-            "answer" => "<p>The Diamond Vault specialises in a range of Custom Made Jewellery. This includes Wedding and Engagement Rings, Custom Rings, Bracelets, Pendants, Cuban Necklaces & Bracelets, Custom Diamond Watches. Diamond Bracelets, Tennis Bracelets & Rope Chains. We also are available to create any piece you have in mind.</p><p>All our items are custom and made to order. If you would like to know any more information please contact us."
+            "question" => "Does your jewellery come with a warranty?",
+            "answer" => "Yes The Diamond Vault provide warranty on all jewellery pieces after the first 6 months of wear.  If the jewellery shows damage from something other then normal wear and tear then a cost to repair will incur."
         ],
         "06" => [
-            "question" => "Does your jewellery come with a warranty?",
-            "answer" => "<p>The Diamond Vault specialises in a range of Custom Made Jewellery. This includes Wedding and Engagement Rings, Custom Rings, Bracelets, Pendants, Cuban Necklaces & Bracelets, Custom Diamond Watches. Diamond Bracelets, Tennis Bracelets & Rope Chains. We also are available to create any piece you have in mind.</p><p>All our items are custom and made to order. If you would like to know any more information please contact us."
-        ],
-        "07" => [
             "question" => "How do I find my Ring sizing?",
-            "answer" => "<p>The Diamond Vault specialises in a range of Custom Made Jewellery. This includes Wedding and Engagement Rings, Custom Rings, Bracelets, Pendants, Cuban Necklaces & Bracelets, Custom Diamond Watches. Diamond Bracelets, Tennis Bracelets & Rope Chains. We also are available to create any piece you have in mind.</p><p>All our items are custom and made to order. If you would like to know any more information please contact us."
+            "answer" => "There is a measurement tool you can access online or you can purchase a ring measurement from any online retailer. Please ask the team for more information."
         ],
     ];
 
@@ -648,69 +644,380 @@ include __DIR__ . '/header.php';
         <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse">
         <div class="section_1">
             <div class="container">
-                <div class="heading text-primary fw-700 fs-2">Contact Us</div>
+                <div class="heading text-primary fw-700 fs-2 font-maiah">Contact Us</div>
                 <div class="fw-600 fs-11 text-white">Simply complete our form below &amp; we'll get back to you as soon as possible</div>
                 <div class="pt-5 pt-md-6 pb-4 pb-md-5 fw-700 fs-6 text-primary font-raleway">Let us know what you are looking for?</div>
                 <div class="row gy-4 g-xl-5">
                     <div class="col-md-6">
                         <label>What Custom jewellery are you interested in?*</label>
-                        <input type="text" placeholder="Bracelet" class="form-control" name="jewelleryType" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="">Choose Your Preferred Colour:*</label>
                         <div class="select-wrapper">
-                            <select class="form-control" name="preferredColour" required>
-                                <option selected>Two-Tone Rose &amp; White Gold</option>
+                            <select class="form-control" id="interestedJewellery" name="interestedJewellery" required>
+                                <option value="" selected disabled>Select Jewellery Type</option>
+                                <option value="Bracelets">Bracelets</option>
+                                <option value="Necklaces">Necklaces</option>
+                                <option value="Pendants">Pendants</option>
+                                <option value="Watches">Watches</option>
+                                <option value="Rings">Rings</option>
                             </select>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <label for="">Do you give Diamond Vault permission on featuring your finished design on our Social Media Platforms?*</label>
+                    <!-- Start of bracelets -->
+                    <div class="col-md-6 form-options group-bracelets">
+                        <label>Style?*</label>
                         <div class="select-wrapper">
-                            <select class="form-control" name="permission" required>
+                            <select class="form-control" name="preferredStyle" required>
+                                <option selected>Cuban</option>
+                                <option>Cartier</option>
+                                <option>Tennis</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-options group-bracelets">
+                        <label for="">Choose Your Preferred Alloy:*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control preferredAlloy" name="preferredAlloy" required>
+                                <option disabled selected>Select from below</option>
+                                <option value="Gold">Gold</option>
+                                <option value="Silver">Silver</option>
+                                <option value="Platinum">Platinum</opion>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-sub-options group-bracelets sub-goldColor">
+                        <label for="">Color?*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control" name="preferredColor" required>
+                                <option selected>Yellow gold</option>
+                                <option>Rose gold</option>
+                                <option>White gold</opion>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 form-sub-options group-bracelets sub-goldCarat">
+                        <label for="">Carats?*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control" name="preferredCarat" required>
+                                <option selected>9</option>
+                                <option>14</option>
+                                <opion>18</opion>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-options group-bracelets">
+                        <label for="">Diamonds?*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control chooseDiamond" name="diamonds" required>
+                                <option disabled selected>Select from below</option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-sub-options group-bracelets sub-diamondType">
+                        <label for="">Diamonds Type?*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control" name="diamondType" required>
+                                <option selected>Natural</option>
+                                <option>Man-made</option>
+                                <option>VS Clarity</option>
+                                <option>SI Clarity</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-options group-bracelets">
+                        <label for="">Wrist Size (Cm)?*</label>
+                        <input type="number" class="form-control" name="wristSize" placeholder="15cm" value="15" required>
+                    </div>
+                    <!-- End of bracelets -->
+
+                    <!-- Start of necklaces -->
+                    <div class="col-md-6 form-options group-necklaces">
+                        <label>Style?*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control" name="preferredStyle" required>
+                                <option selected>Cuban</option>
+                                <option>Tennis</option>
+                                <option>Rope</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-options group-necklaces">
+                        <label for="">Choose Your Preferred Alloy:*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control preferredAlloy" name="preferredAlloy" required>
+                                <option disabled selected>Select from below</option>
+                                <option value="Gold">Gold</option>
+                                <option value="Silver">Silver</option>
+                                <option value="Platinum">Platinum</opion>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-sub-options group-necklaces sub-goldColor">
+                        <label for="">Color?*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control" name="preferredColor" required>
+                                <option selected>Yellow gold</option>
+                                <option>Rose gold</option>
+                                <option>White gold</opion>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-sub-options group-necklaces sub-goldCarat">
+                        <label for="">Carats?*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control" name="preferredCarat" required>
+                                <option selected>9</option>
+                                <option>14</option>
+                                <opion>18</opion>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-options group-necklaces">
+                        <label for="">Diamonds?*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control chooseDiamond" name="diamonds" required>
+                                <option disabled selected>Select from below</option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-sub-options group-necklaces sub-diamondType">
+                        <label for="">Diamonds Type?*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control" name="diamondType" required>
+                                <option selected>Natural</option>
+                                <option>Man-made</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-options group-necklaces">
+                        <label for="">Length (Cm)?*</label>
+                        <input type="number" class="form-control" name="necklaceLength" placeholder="15cm" value="15" required>
+                    </div>
+                    <!-- End of necklaces -->
+
+                    <!-- Start of Pendants -->
+                    <div class="col-md-6 form-options group-pendants">
+                        <label for="">Choose Your Preferred Alloy:*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control preferredAlloy" name="preferredAlloy" required>
+                                <option disabled selected>Select from below</option>
+                                <option value="Gold">Gold</option>
+                                <option value="Silver">Silver</option>
+                                <option value="Platinum">Platinum</opion>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-sub-options group-pendants sub-goldColor">
+                        <label for="">Color?*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control" name="preferredColor" required>
+                                <option selected>Yellow gold</option>
+                                <option>Rose gold</option>
+                                <option>White gold</opion>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-sub-options group-pendants sub-goldCarat">
+                        <label for="">Carats?*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control" name="preferredCarat" required>
+                                <option selected>9</option>
+                                <option>14</option>
+                                <opion>18</opion>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-options group-pendants">
+                        <label for="">Diamonds?*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control chooseDiamond" name="diamonds" required>
+                                <option disabled selected>Select from below</option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-sub-options group-pendants sub-diamondType">
+                        <label for="">Diamonds Type?*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control" name="diamondType" required>
+                                <option selected>Natural</option>
+                                <option>Man-made</option>
+                                <option>VS Clarity</option>
+                                <option>SI Clarity</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-options group-pendants">
+                        <label for="">Diamond Setting*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control" name="diamondSettingPendant" required>
+                                <option selected>Flower</option>
+                                <option>Line</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-options group-pendants">
+                        <label for="">Size (Cm)?*</label>
+                        <input type="number" class="form-control" name="pendantSize" placeholder="15cm" value="15" required>
+                    </div>
+                    <!-- End of Pendants -->
+
+                    <!-- Start of watches -->
+                    <div class="col-md-6 form-options group-watches">
+                        <label for="">Brand?*</label>
+                        <input type="text" class="form-control" name="watchBrand" placeholder="Rolex" required>
+                    </div>
+                    <div class="col-md-6 form-options group-watches">
+                        <label for="">Diamonds?*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control chooseDiamond" name="diamonds" required>
+                                <option disabled selected>Select from below</option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-sub-options group-watches sub-diamondType">
+                        <label for="">Diamonds Type?*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control" name="diamondType" required>
+                                <option selected>Natural</option>
+                                <option>Man-made</option>
+                                <option>VS Clarity</option>
+                                <option>SI Clarity</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-options group-watches">
+                        <label for="">Diamond Setting*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control" name="diamondSettingWatches" required>
+                                <option selected>Flower</option>
+                                <option>Line</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-options group-watches">
+                        <label for="">Custom Dial?*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control" name="customWatchDial" required>
                                 <option selected>Yes</option>
                                 <option>No</option>
                             </select>
                         </div>
                     </div>
+                    <div class="col-12 form-options group-watches">
+                        <label for="">Side of Links?*</label>
+                        <input type="text" class="form-control" name="sideOfLink" placeholder="Preferred Side of Link" required>
+                    </div>
+                    <div class="col-12 form-options group-watches">
+                        <label for="">What's your watch preference?*</label>
+                        <div>
+                            <div class="form-check form-check-inline px-3">
+                                <input class="form-check-input not-required" type="radio" name="givePermission" id="yesPermission" value="Yes" checked>
+                                <label class="form-check-label px-2" for="yesPermission">Supplied</label>
+                            </div>
+                            <div class="form-check form-check-inline px-3">
+                                <input class="form-check-input not-required" type="radio" name="givePermission" id="noPermission" value="No">
+                                <label class="form-check-label px-2" for="noPermission">Sourced</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of watches -->
+
+                    <!-- Start of Rings -->
+                    <div class="col-md-6 form-options group-rings">
+                        <label>Shape?*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control" name="preferredShape" required>
+                                <option selected>Round</option>
+                                <option>Cushion</option>
+                                <option>Princess</option>
+                                <option>Asscher</option>
+                                <option>Triangle</option>
+                                <option>Heart</option>
+                                <option>Pear</option>
+                                <option>Emerald</option>
+                                <option>Radiant</option>
+                                <option>Baguette</option>
+                                <option>Oval</option>
+                                <option>Marquise</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-options group-rings">
+                        <label for="">Choose Your Preferred Alloy:*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control preferredAlloy" name="preferredAlloy" required>
+                                <option disabled selected>Select from below</option>
+                                <option value="Gold">Gold</option>
+                                <option value="Silver">Silver</option>
+                                <option value="Platinum">Platinum</opion>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-sub-options group-rings sub-goldColor">
+                        <label for="">Color?*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control" name="preferredColor" required>
+                                <option selected>Yellow gold</option>
+                                <option>Rose gold</option>
+                                <option>White gold</opion>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-sub-options group-rings sub-goldCarat">
+                        <label for="">Carats?*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control" name="preferredCarat" required>
+                                <option selected>9</option>
+                                <option>14</option>
+                                <opion>18</opion>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-options group-rings">
+                        <label for="">Diamonds?*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control chooseDiamond" name="diamonds" required>
+                                <option disabled selected>Select from below</option>
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-sub-options group-rings sub-diamondType">
+                        <label for="">Diamonds Type?*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control" name="diamondType" required>
+                                <option selected>Natural</option>
+                                <option>Man-made</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-options group-rings">
+                        <label for="">Ring Size (Cm)?*</label>
+                        <input type="number" class="form-control" name="ringSize" placeholder="15cm" value="15" required>
+                    </div>
+                    <div class="col-12 form-options group-rings">
+                        <label for="">Clarity?*</label>
+                        <div class="select-wrapper">
+                            <select class="form-control" name="clarity" required>
+                                <option selected>VS Clarity</option>
+                                <option>SI Clarity</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- End of rings -->
                 </div>
             </div>
         </div>
         <div class="section_2">
             <div class="container">
-                <div class="heading font-raleway text-white fw-700 fs-6 pb-5">High-End Custom Work &amp; Exclusive Piece Details</div>
-                <div class="row gy-4 g-xl-5">
-                    <div class="col-md-6">
-                        <label>What type of Clarity</label>
-                        <div class="select-wrapper">
-                            <select class="form-control" name="clarity">
-                                <option disabled selected>Select Clarity</option>
-                                <option>Clarity 1</option>
-                                <option>Clarity 2</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <label>What type of Alloys</label>
-                        <div class="select-wrapper">
-                            <select class="form-control" name="alloy">
-                                <option disabled selected>Select Alloys</option>
-                                <option>Alloys 1</option>
-                                <option>Alloys 2</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <label>Tell us your preferred Colour</label>
-                        <div class="select-wrapper">
-                            <select class="form-select form-control" name="colour">
-                                <option disabled selected>Preferred Colour</option>
-                                <option>Colour 1</option>
-                                <option>Colour 2</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
                 <hr>
                 <div class="heading font-raleway text-white fw-700 fs-6 pb-5">Your Contact Information</div>
                 <div class="row gy-4 g-xl-5">

@@ -2,13 +2,13 @@
 include __DIR__ . '/env.php';
 
 $site = "The Diamond Vault";
-$phone_number = "0432 406 340";
-$admin_email = 'arijal@aiims.com.au';
-$facebook = "";
-$instagram = "";
+$phone_number = "0415 558 559";
+$admin_email = 'arijal@aiims.com.au'; // 'info@thediamondvault.com.au';
+$facebook = "https://www.facebook.com/TheDiamondVaultAus";
+$instagram = "https://www.instagram.com/_thediamondvault_/";
 $whatsapp = "";
-$bcc_email = "";
-$no_reply_email = 'info@website.com.au';
+// $bcc_email = "";
+$no_reply_email = 'info@thediamondvault.com.au';
 $recaptcha_client_secret = $client_secret;
 $recaptcha_server_secret = $server_secret;
 

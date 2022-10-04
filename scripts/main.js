@@ -94,7 +94,7 @@ $(() => {
         filterActive = cat1;
     }
 
-    $('.diamond-choices-wrapper-sm .cat1').on('change', function() {
+    $('.diamond-choices-wrapper-sm .cat1').on('change', function () {
         $(`.diamond-choices-wrapper-sm .cat2`).removeClass('active');
         $(`.diamond-choices-wrapper-sm .cat2#${$(this).val()}`).addClass('active');
     });
@@ -102,6 +102,41 @@ $(() => {
     $('.diamond-choices-wrapper-sm select').on('change', function () {
         filterCategory($('.diamond-choices-wrapper-sm select.cat1').val(), $('.diamond-choices-wrapper-sm select.cat2.active').val());
     });
+
+    $('#interestedJewellery').on('change', function () {
+        let selectedGroup = $(this).val().toLowerCase();
+
+        $('.form-options').removeClass('active');
+        $('.form-sub-options').removeClass('active');
+        $(`.form-options.group-${selectedGroup}`).addClass('active');
+
+        $(`.group-${selectedGroup} select.preferredAlloy`).on('change', function () {
+            if ($(this).val() == 'Gold') {
+                $(`.form-sub-options.group-${selectedGroup}.sub-goldColor`).addClass('active');
+                $(`.form-sub-options.group-${selectedGroup}.sub-goldCarat`).addClass('active');
+            } else {
+                $(`.form-sub-options.group-${selectedGroup}.sub-goldColor`).removeClass('active');
+                $(`.form-sub-options.group-${selectedGroup}.sub-goldCarat`).removeClass('active');
+            }
+        });
+
+        $(`.group-${selectedGroup} select.chooseDiamond`).on('change', function () {
+            if ($(this).val() == 'Yes') {
+                $(`.form-sub-options.group-${selectedGroup}.sub-diamondType`).addClass('active');
+            } else {
+                $(`.form-sub-options.group-${selectedGroup}.sub-diamondType`).removeClass('active');
+            }
+        });
+    });
+
+
+    $('select.chooseDiamond').on('change', function () {
+        if ($(this).val() == 'Yes') {
+            $('.form-options-diamondType').css('display', 'block');
+        } else {
+            $('.form-options-diamondType').css('display', 'none');
+        }
+    })
 });
 
 $(".accordion-head").on('click', function () {

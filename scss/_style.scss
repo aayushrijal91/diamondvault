@@ -2,6 +2,26 @@
 @return url("../images/" + $path + "/" + $file) no-repeat;
 }
 
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 header {
     background: imgUrl('header.png') center top;
     background-size: contain;
@@ -243,26 +263,6 @@ section.diamond-collection {
                 animation: fadeIn 0.65s ease forwards;
             }
         }
-
-        @-webkit-keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
     }
 
     .diamond-choices-wrapper {
@@ -463,7 +463,7 @@ section.faq {
     }
 
     @include media-breakpoint-up(xl) {
-        padding: 206px 0;
+        padding: 206px 0 112px;
     }
 
     button:focus {
@@ -548,10 +548,23 @@ section.faq {
 }
 
 section.form {
+    padding: 98px 0 128px;
+    background-color: $black;
+
     @include media-breakpoint-down(sm) {
         .heading {
             font-size: 2.5rem !important;
             line-height: 1.15;
+        }
+    }
+
+    .form-options, .form-sub-options {
+        display: none;
+
+        &.active {
+            display: block;
+            -webkit-animation: fadeIn 0.65s ease forwards;
+            animation: fadeIn 0.65s ease forwards;
         }
     }
 
@@ -628,13 +641,6 @@ section.form {
     }
 
     .section_1 {
-        background-color: #141413;
-        padding-bottom: 88px;
-
-        @include media-breakpoint-down(sm) {
-            padding-bottom: 67px;
-        }
-
         .form-control {
             border: 1px solid rgba(155, 167, 176, 0.26);
             background-color: $white;
@@ -643,13 +649,6 @@ section.form {
     }
 
     .section_2 {
-        background-color: $black;
-        padding: 126px 0;
-
-        @include media-breakpoint-down(sm) {
-            padding: 53px 0 64px;
-        }
-
         .form-control {
             border: 1px solid #3F3F3F;
             background: transparent;
