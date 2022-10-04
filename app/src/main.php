@@ -651,7 +651,7 @@ include __DIR__ . '/header.php';
                     <div class="col-md-6">
                         <label>What Custom jewellery are you interested in?*</label>
                         <div class="select-wrapper">
-                            <select class="form-control" id="interestedJewellery" name="interestedJewellery" required>
+                            <select class="form-control" id="interestedJewellery" name="interestedJewellery">
                                 <option value="" selected disabled>Select Jewellery Type</option>
                                 <option value="Bracelets">Bracelets</option>
                                 <option value="Necklaces">Necklaces</option>
@@ -665,7 +665,7 @@ include __DIR__ . '/header.php';
                     <div class="col-md-6 form-options group-bracelets">
                         <label>Style?*</label>
                         <div class="select-wrapper">
-                            <select class="form-control" name="preferredStyle" required>
+                            <select class="form-control" name="braceletsPreferredStyle">
                                 <option selected>Cuban</option>
                                 <option>Cartier</option>
                                 <option>Tennis</option>
@@ -675,21 +675,21 @@ include __DIR__ . '/header.php';
                     <div class="col-md-6 form-options group-bracelets">
                         <label for="">Choose Your Preferred Alloy:*</label>
                         <div class="select-wrapper">
-                            <select class="form-control preferredAlloy" name="preferredAlloy" required>
+                            <select class="form-control preferredAlloy" name="braceletsPreferredAlloy">
                                 <option disabled selected>Select from below</option>
                                 <option value="Gold">Gold</option>
                                 <option value="Silver">Silver</option>
-                                <option value="Platinum">Platinum</opion>
+                                <option value="Platinum">Platinum</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-6 form-sub-options group-bracelets sub-goldColor">
                         <label for="">Color?*</label>
                         <div class="select-wrapper">
-                            <select class="form-control" name="preferredColor" required>
+                            <select class="form-control" name="braceletsPreferredColor">
                                 <option selected>Yellow gold</option>
                                 <option>Rose gold</option>
-                                <option>White gold</opion>
+                                <option>White gold</option>
                             </select>
                         </div>
                     </div>
@@ -697,17 +697,17 @@ include __DIR__ . '/header.php';
                     <div class="col-md-6 form-sub-options group-bracelets sub-goldCarat">
                         <label for="">Carats?*</label>
                         <div class="select-wrapper">
-                            <select class="form-control" name="preferredCarat" required>
+                            <select class="form-control" name="braceletsPreferredCarat">
                                 <option selected>9</option>
                                 <option>14</option>
-                                <opion>18</opion>
+                                <option>18</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-6 form-options group-bracelets">
                         <label for="">Diamonds?*</label>
                         <div class="select-wrapper">
-                            <select class="form-control chooseDiamond" name="diamonds" required>
+                            <select class="form-control chooseDiamond" name="braceletsChooseDiamonds">
                                 <option disabled selected>Select from below</option>
                                 <option>Yes</option>
                                 <option>No</option>
@@ -717,7 +717,7 @@ include __DIR__ . '/header.php';
                     <div class="col-md-6 form-sub-options group-bracelets sub-diamondType">
                         <label for="">Diamonds Type?*</label>
                         <div class="select-wrapper">
-                            <select class="form-control" name="diamondType" required>
+                            <select class="form-control" name="braceletsDiamondType">
                                 <option selected>Natural</option>
                                 <option>Man-made</option>
                                 <option>VS Clarity</option>
@@ -727,7 +727,7 @@ include __DIR__ . '/header.php';
                     </div>
                     <div class="col-md-6 form-options group-bracelets">
                         <label for="">Wrist Size (Cm)?*</label>
-                        <input type="number" class="form-control" name="wristSize" placeholder="15cm" value="15" required>
+                        <input type="number" class="form-control" name="braceletsWristSize" placeholder="15cm" value="15">
                     </div>
                     <!-- End of bracelets -->
 
@@ -735,7 +735,7 @@ include __DIR__ . '/header.php';
                     <div class="col-md-6 form-options group-necklaces">
                         <label>Style?*</label>
                         <div class="select-wrapper">
-                            <select class="form-control" name="preferredStyle" required>
+                            <select class="form-control" name="necklacesPreferredStyle">
                                 <option selected>Cuban</option>
                                 <option>Tennis</option>
                                 <option>Rope</option>
@@ -745,38 +745,38 @@ include __DIR__ . '/header.php';
                     <div class="col-md-6 form-options group-necklaces">
                         <label for="">Choose Your Preferred Alloy:*</label>
                         <div class="select-wrapper">
-                            <select class="form-control preferredAlloy" name="preferredAlloy" required>
+                            <select class="form-control preferredAlloy" name="necklacesPreferredAlloy">
                                 <option disabled selected>Select from below</option>
                                 <option value="Gold">Gold</option>
                                 <option value="Silver">Silver</option>
-                                <option value="Platinum">Platinum</opion>
+                                <option value="Platinum">Platinum</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-6 form-sub-options group-necklaces sub-goldColor">
                         <label for="">Color?*</label>
                         <div class="select-wrapper">
-                            <select class="form-control" name="preferredColor" required>
+                            <select class="form-control" name="necklacesPreferredColor">
                                 <option selected>Yellow gold</option>
                                 <option>Rose gold</option>
-                                <option>White gold</opion>
+                                <option>White gold</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-6 form-sub-options group-necklaces sub-goldCarat">
                         <label for="">Carats?*</label>
                         <div class="select-wrapper">
-                            <select class="form-control" name="preferredCarat" required>
+                            <select class="form-control" name="necklacesPreferredCarat">
                                 <option selected>9</option>
                                 <option>14</option>
-                                <opion>18</opion>
+                                <option>18</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-6 form-options group-necklaces">
                         <label for="">Diamonds?*</label>
                         <div class="select-wrapper">
-                            <select class="form-control chooseDiamond" name="diamonds" required>
+                            <select class="form-control chooseDiamond" name="necklacesChooseDiamonds">
                                 <option disabled selected>Select from below</option>
                                 <option>Yes</option>
                                 <option>No</option>
@@ -786,7 +786,7 @@ include __DIR__ . '/header.php';
                     <div class="col-md-6 form-sub-options group-necklaces sub-diamondType">
                         <label for="">Diamonds Type?*</label>
                         <div class="select-wrapper">
-                            <select class="form-control" name="diamondType" required>
+                            <select class="form-control" name="necklacesDiamondType">
                                 <option selected>Natural</option>
                                 <option>Man-made</option>
                             </select>
@@ -794,7 +794,7 @@ include __DIR__ . '/header.php';
                     </div>
                     <div class="col-md-6 form-options group-necklaces">
                         <label for="">Length (Cm)?*</label>
-                        <input type="number" class="form-control" name="necklaceLength" placeholder="15cm" value="15" required>
+                        <input type="number" class="form-control" name="necklaceLength" placeholder="15cm" value="15">
                     </div>
                     <!-- End of necklaces -->
 
@@ -802,38 +802,38 @@ include __DIR__ . '/header.php';
                     <div class="col-md-6 form-options group-pendants">
                         <label for="">Choose Your Preferred Alloy:*</label>
                         <div class="select-wrapper">
-                            <select class="form-control preferredAlloy" name="preferredAlloy" required>
+                            <select class="form-control preferredAlloy" name="pendantsPreferredAlloy">
                                 <option disabled selected>Select from below</option>
                                 <option value="Gold">Gold</option>
                                 <option value="Silver">Silver</option>
-                                <option value="Platinum">Platinum</opion>
+                                <option value="Platinum">Platinum</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-6 form-sub-options group-pendants sub-goldColor">
                         <label for="">Color?*</label>
                         <div class="select-wrapper">
-                            <select class="form-control" name="preferredColor" required>
+                            <select class="form-control" name="pendantsPreferredColor">
                                 <option selected>Yellow gold</option>
                                 <option>Rose gold</option>
-                                <option>White gold</opion>
+                                <option>White gold</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-6 form-sub-options group-pendants sub-goldCarat">
                         <label for="">Carats?*</label>
                         <div class="select-wrapper">
-                            <select class="form-control" name="preferredCarat" required>
+                            <select class="form-control" name="pendantsPreferredCarat">
                                 <option selected>9</option>
                                 <option>14</option>
-                                <opion>18</opion>
+                                <option>18</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-6 form-options group-pendants">
                         <label for="">Diamonds?*</label>
                         <div class="select-wrapper">
-                            <select class="form-control chooseDiamond" name="diamonds" required>
+                            <select class="form-control chooseDiamond" name="pendantsChooseDiamonds">
                                 <option disabled selected>Select from below</option>
                                 <option>Yes</option>
                                 <option>No</option>
@@ -843,7 +843,7 @@ include __DIR__ . '/header.php';
                     <div class="col-md-6 form-sub-options group-pendants sub-diamondType">
                         <label for="">Diamonds Type?*</label>
                         <div class="select-wrapper">
-                            <select class="form-control" name="diamondType" required>
+                            <select class="form-control" name="pendantsDiamondType">
                                 <option selected>Natural</option>
                                 <option>Man-made</option>
                                 <option>VS Clarity</option>
@@ -854,7 +854,7 @@ include __DIR__ . '/header.php';
                     <div class="col-md-6 form-options group-pendants">
                         <label for="">Diamond Setting*</label>
                         <div class="select-wrapper">
-                            <select class="form-control" name="diamondSettingPendant" required>
+                            <select class="form-control" name="pendantsDiamondSetting">
                                 <option selected>Flower</option>
                                 <option>Line</option>
                             </select>
@@ -862,19 +862,19 @@ include __DIR__ . '/header.php';
                     </div>
                     <div class="col-md-6 form-options group-pendants">
                         <label for="">Size (Cm)?*</label>
-                        <input type="number" class="form-control" name="pendantSize" placeholder="15cm" value="15" required>
+                        <input type="number" class="form-control" name="pendantsSize" placeholder="15cm" value="15">
                     </div>
                     <!-- End of Pendants -->
 
                     <!-- Start of watches -->
                     <div class="col-md-6 form-options group-watches">
                         <label for="">Brand?*</label>
-                        <input type="text" class="form-control" name="watchBrand" placeholder="Rolex" required>
+                        <input type="text" class="form-control" name="watchesBrand" placeholder="Rolex">
                     </div>
                     <div class="col-md-6 form-options group-watches">
                         <label for="">Diamonds?*</label>
                         <div class="select-wrapper">
-                            <select class="form-control chooseDiamond" name="diamonds" required>
+                            <select class="form-control chooseDiamond" name="watchesChooseDiamonds">
                                 <option disabled selected>Select from below</option>
                                 <option>Yes</option>
                                 <option>No</option>
@@ -884,7 +884,7 @@ include __DIR__ . '/header.php';
                     <div class="col-md-6 form-sub-options group-watches sub-diamondType">
                         <label for="">Diamonds Type?*</label>
                         <div class="select-wrapper">
-                            <select class="form-control" name="diamondType" required>
+                            <select class="form-control" name="watchesDiamondType">
                                 <option selected>Natural</option>
                                 <option>Man-made</option>
                                 <option>VS Clarity</option>
@@ -895,7 +895,7 @@ include __DIR__ . '/header.php';
                     <div class="col-md-6 form-options group-watches">
                         <label for="">Diamond Setting*</label>
                         <div class="select-wrapper">
-                            <select class="form-control" name="diamondSettingWatches" required>
+                            <select class="form-control" name="watchesDiamondSetting">
                                 <option selected>Flower</option>
                                 <option>Line</option>
                             </select>
@@ -904,7 +904,7 @@ include __DIR__ . '/header.php';
                     <div class="col-md-6 form-options group-watches">
                         <label for="">Custom Dial?*</label>
                         <div class="select-wrapper">
-                            <select class="form-control" name="customWatchDial" required>
+                            <select class="form-control" name="watchesCustomDial">
                                 <option selected>Yes</option>
                                 <option>No</option>
                             </select>
@@ -912,17 +912,17 @@ include __DIR__ . '/header.php';
                     </div>
                     <div class="col-12 form-options group-watches">
                         <label for="">Side of Links?*</label>
-                        <input type="text" class="form-control" name="sideOfLink" placeholder="Preferred Side of Link" required>
+                        <input type="text" class="form-control" name="watchesSideOfLink" placeholder="Preferred Side of Link">
                     </div>
                     <div class="col-12 form-options group-watches">
                         <label for="">What's your watch preference?*</label>
                         <div>
                             <div class="form-check form-check-inline px-3">
-                                <input class="form-check-input not-required" type="radio" name="givePermission" id="yesPermission" value="Yes" checked>
+                                <input class="form-check-input not-required" type="radio" name="watchesGivePermission" id="yesPermission" value="Yes" checked>
                                 <label class="form-check-label px-2" for="yesPermission">Supplied</label>
                             </div>
                             <div class="form-check form-check-inline px-3">
-                                <input class="form-check-input not-required" type="radio" name="givePermission" id="noPermission" value="No">
+                                <input class="form-check-input not-required" type="radio" name="watchesGivePermission" id="noPermission" value="No">
                                 <label class="form-check-label px-2" for="noPermission">Sourced</label>
                             </div>
                         </div>
@@ -933,7 +933,7 @@ include __DIR__ . '/header.php';
                     <div class="col-md-6 form-options group-rings">
                         <label>Shape?*</label>
                         <div class="select-wrapper">
-                            <select class="form-control" name="preferredShape" required>
+                            <select class="form-control" name="ringsPreferredShape">
                                 <option selected>Round</option>
                                 <option>Cushion</option>
                                 <option>Princess</option>
@@ -952,38 +952,38 @@ include __DIR__ . '/header.php';
                     <div class="col-md-6 form-options group-rings">
                         <label for="">Choose Your Preferred Alloy:*</label>
                         <div class="select-wrapper">
-                            <select class="form-control preferredAlloy" name="preferredAlloy" required>
+                            <select class="form-control preferredAlloy" name="ringsPreferredAlloy">
                                 <option disabled selected>Select from below</option>
                                 <option value="Gold">Gold</option>
                                 <option value="Silver">Silver</option>
-                                <option value="Platinum">Platinum</opion>
+                                <option value="Platinum">Platinum</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-6 form-sub-options group-rings sub-goldColor">
                         <label for="">Color?*</label>
                         <div class="select-wrapper">
-                            <select class="form-control" name="preferredColor" required>
+                            <select class="form-control" name="ringsPreferredColor">
                                 <option selected>Yellow gold</option>
                                 <option>Rose gold</option>
-                                <option>White gold</opion>
+                                <option>White gold</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-6 form-sub-options group-rings sub-goldCarat">
                         <label for="">Carats?*</label>
                         <div class="select-wrapper">
-                            <select class="form-control" name="preferredCarat" required>
+                            <select class="form-control" name="ringsPreferredCarat">
                                 <option selected>9</option>
                                 <option>14</option>
-                                <opion>18</opion>
+                                <option>18</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-6 form-options group-rings">
                         <label for="">Diamonds?*</label>
                         <div class="select-wrapper">
-                            <select class="form-control chooseDiamond" name="diamonds" required>
+                            <select class="form-control chooseDiamond" name="ringsChooseDiamonds">
                                 <option disabled selected>Select from below</option>
                                 <option>Yes</option>
                                 <option>No</option>
@@ -993,7 +993,7 @@ include __DIR__ . '/header.php';
                     <div class="col-md-6 form-sub-options group-rings sub-diamondType">
                         <label for="">Diamonds Type?*</label>
                         <div class="select-wrapper">
-                            <select class="form-control" name="diamondType" required>
+                            <select class="form-control" name="ringsDiamondType">
                                 <option selected>Natural</option>
                                 <option>Man-made</option>
                             </select>
@@ -1001,12 +1001,12 @@ include __DIR__ . '/header.php';
                     </div>
                     <div class="col-md-6 form-options group-rings">
                         <label for="">Ring Size (Cm)?*</label>
-                        <input type="number" class="form-control" name="ringSize" placeholder="15cm" value="15" required>
+                        <input type="number" class="form-control" name="ringsSize" placeholder="15cm" value="15">
                     </div>
                     <div class="col-12 form-options group-rings">
                         <label for="">Clarity?*</label>
                         <div class="select-wrapper">
-                            <select class="form-control" name="clarity" required>
+                            <select class="form-control" name="ringsClarity">
                                 <option selected>VS Clarity</option>
                                 <option>SI Clarity</option>
                             </select>
