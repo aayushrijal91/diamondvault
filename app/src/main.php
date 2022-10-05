@@ -39,16 +39,16 @@ include __DIR__ . '/header.php';
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mt-4">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Our Products</a>
+                        <a class="nav-link active" aria-current="page" href="#products">Our Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Ring Quote</a>
+                        <a class="nav-link" href="#form">Ring Quote</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Enquire</a>
+                        <a class="nav-link" href="#form">Enquire</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">FAQs</a>
+                        <a class="nav-link" href="#faq">FAQs</a>
                     </li>
                 </ul>
             </div>
@@ -60,16 +60,16 @@ include __DIR__ . '/header.php';
                 <div class="col">
                     <div class="row gx-xl-5">
                         <div class="col-auto">
-                            <a href="#" class="header-btn">Our Products</a>
+                            <a href="#products" class="header-btn">Our Products</a>
                         </div>
                         <div class="col-auto">
-                            <a href="#" class="header-btn">Ring Quote</a>
+                            <a href="#form" class="header-btn">Ring Quote</a>
                         </div>
                         <div class="col-auto">
-                            <a href="#" class="header-btn">Enquire</a>
+                            <a href="#form" class="header-btn">Enquire</a>
                         </div>
                         <div class="col-auto">
-                            <a href="#" class="header-btn">FAQs</a>
+                            <a href="#faq" class="header-btn">FAQs</a>
                         </div>
                     </div>
                 </div>
@@ -107,11 +107,11 @@ include __DIR__ . '/header.php';
                 <div class="col-xl-10">
                     <div class="row">
                         <div class="col-lg-6 px-xl-5 text-center">
-                            <div class="heading fs-1 fw-600 text-uppercase font-maiah text-primary letter-spacing-n04 line-height-12">Custom<br> One of a Kind Jewelry</div>
+                            <div class="heading fs-1 fw-600 text-uppercase font-maiah text-primary letter-spacing-n04 line-height-12">Custom<br> One of a Kind Jewellery</div>
                             <div class="description text-white fs-9">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua commodo.
+                                Bespoke Watch and Jewellery Experts, Diamond Vaut specialises in all Gold & Diamond Jewellery and Custom Watches.
                             </div>
-                            <a href="#" class="btn btn-primary">
+                            <a href="#products" class="btn btn-primary">
                                 <span class="pe-3">See All</span> <svg width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4393 20.5607C17.0251 21.1464 17.9749 21.1464 18.5607 20.5607L27.5607 11.5607C28.1464 10.9749 28.1464 10.0251 27.5607 9.43934L18.5607 0.43934C17.9749 -0.146447 17.0251 -0.146447 16.4393 0.43934C15.8536 1.02513 15.8536 1.97487 16.4393 2.56066L24.3787 10.5L16.4393 18.4393C15.8536 19.0251 15.8536 19.9749 16.4393 20.5607Z" fill="white" />
                                     <path d="M0 10.5C0 9.67157 0.671573 9 1.5 9H24.5C25.3284 9 26 9.67157 26 10.5C26 11.3284 25.3284 12 24.5 12H1.5C0.671572 12 0 11.3284 0 10.5Z" fill="white" />
@@ -133,11 +133,11 @@ include __DIR__ . '/header.php';
                             <?= renderImg('about-diamond.png', 'logo') ?>
                             <div class="heading fs-4 fw-600 text-uppercase font-maiah text-primary letter-spacing-02 line-height-12 py-5">Celebrate your love without sacrificing mother earth</div>
                             <div class="description">
-                                <p>For <span class="fw-800">custom bracelets</span> & chains just need to know cm size for anything custom.</p>
-                                <p>For <span class="fw-800">gold Cuban chains & bracelets</span> need too know cm size and thickness in width also different designs e.g Miami Cuban, diamond cut sand blast finish</p>
-                                <p>For <span class="fw-800">wedding rings</span>, you need colour of gold, gold purity, carat size, stone shape, lab or natural stone, colour of diamond, clarity of the diamond</p>
+                                <p>The Diamond Vault specialises in custom one of a kind from <span class="fw-800">Gold, White Gold, Diamond Jewellery and Watches.</span></p>
+                                <p> We have a range of Bracelets, Necklaces, Rings, Enagagement Rings, Custom Pendants, Cuban Necklaces & Bracelets and Watches.</p>
+                                <p>We also create custom made to order pieces that you have in mind.</p>
                             </div>
-                            <a href="#" class="btn btn-primary">
+                            <a href="#collection" class="btn btn-primary">
                                 <span class="pe-3 text-uppercase fw-600">lets pick a ring</span> <svg width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4393 20.5607C17.0251 21.1464 17.9749 21.1464 18.5607 20.5607L27.5607 11.5607C28.1464 10.9749 28.1464 10.0251 27.5607 9.43934L18.5607 0.43934C17.9749 -0.146447 17.0251 -0.146447 16.4393 0.43934C15.8536 1.02513 15.8536 1.97487 16.4393 2.56066L24.3787 10.5L16.4393 18.4393C15.8536 19.0251 15.8536 19.9749 16.4393 20.5607Z" fill="white" />
                                     <path d="M0 10.5C0 9.67157 0.671573 9 1.5 9H24.5C25.3284 9 26 9.67157 26 10.5C26 11.3284 25.3284 12 24.5 12H1.5C0.671572 12 0 11.3284 0 10.5Z" fill="white" />
@@ -151,7 +151,7 @@ include __DIR__ . '/header.php';
     </div>
 </header>
 
-<section class="products">
+<section class="products" id="products">
     <div class="container">
         <div class="text-center text-uppercase letter-spacing-02 font-maiah fs-4 fw-600 pb-6">See Our Products</div>
         <div class="product-slider" id="product-slider">
@@ -181,9 +181,33 @@ include __DIR__ . '/header.php';
             </div>
             <div class="product-slider-content">
                 <div class="product-card">
-                    <?= renderImg('diamond-engagement-ring.png', 'lib') ?>
+                    <?= renderImg('diamond-bracelet-product.png', 'lib') ?>
                 </div>
-                <div class="caption">Diamond Engagement Ring</div>
+                <div class="caption">Diamond Bracelet</div>
+            </div>
+            <div class="product-slider-content">
+                <div class="product-card">
+                    <?= renderImg('engagement-ring-product.png', 'lib') ?>
+                </div>
+                <div class="caption">Engagement Ring</div>
+            </div>
+            <div class="product-slider-content">
+                <div class="product-card">
+                    <?= renderImg('cartier-nail-ring-product.png', 'lib') ?>
+                </div>
+                <div class="caption">Cartier Nail Ring</div>
+            </div>
+            <div class="product-slider-content">
+                <div class="product-card">
+                    <?= renderImg('cuban-diamond-necklace-product.png', 'lib') ?>
+                </div>
+                <div class="caption">Cuban Diamond Necklace</div>
+            </div>
+            <div class="product-slider-content">
+                <div class="product-card">
+                    <?= renderImg('cuban-gold-necklace-product.png', 'lib') ?>
+                </div>
+                <div class="caption">Cuban Gold Necklace</div>
             </div>
         </div>
     </div>
@@ -195,12 +219,11 @@ include __DIR__ . '/header.php';
             <div class="row justify-content-center">
                 <div class="col-xl-5 text-center">
                     <?= renderImg('custom-diamond.png', 'lib') ?>
-                    <div class="heading fs-5 fw-600 text-uppercase font-maiah text-primary letter-spacing-n04 line-height-12 py-5">custom one of a kind jewelry</div>
+                    <div class="heading fs-5 fw-600 text-uppercase font-maiah text-primary letter-spacing-n04 line-height-12 py-5">custom one of a kind Jewellery</div>
                     <div class="description text-white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.
+                    Want to create Custom Design One of a kind jewellery Piece Diamond Vault can help.  Have a look at our pieces below or reach out to our team with your ideas.
                     </div>
-                    <a href="#" class="btn btn-primary">
+                    <a href="#collection" class="btn btn-primary">
                         <span class="pe-3 text-capitalize fw-600">See All</span> <svg width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4393 20.5607C17.0251 21.1464 17.9749 21.1464 18.5607 20.5607L27.5607 11.5607C28.1464 10.9749 28.1464 10.0251 27.5607 9.43934L18.5607 0.43934C17.9749 -0.146447 17.0251 -0.146447 16.4393 0.43934C15.8536 1.02513 15.8536 1.97487 16.4393 2.56066L24.3787 10.5L16.4393 18.4393C15.8536 19.0251 15.8536 19.9749 16.4393 20.5607Z" fill="white" />
                             <path d="M0 10.5C0 9.67157 0.671573 9 1.5 9H24.5C25.3284 9 26 9.67157 26 10.5C26 11.3284 25.3284 12 24.5 12H1.5C0.671572 12 0 11.3284 0 10.5Z" fill="white" />
@@ -212,7 +235,7 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 
-<section class="diamond-collection">
+<section class="diamond-collection" id="collection">
     <div class="container">
         <div class="heading text-center text-uppercase letter-spacing-02 font-maiah fs-4 fw-600 pb-5 pb-md-6">Our Collection</div>
         <div class="diamond-choices-wrapper-sm d-xl-none">
@@ -571,7 +594,7 @@ include __DIR__ . '/header.php';
     <div class="d-md-none"><?= renderImg('our-watches-sm.png', 'lib', 'w-100') ?></div>
 </section>
 
-<section class="faq" id="faqs">
+<section class="faq" id="faq">
     <?php
     $faqs = [
         "01" => [
