@@ -109,7 +109,7 @@ include __DIR__ . '/header.php';
                         <div class="col-lg-6 px-xl-5 text-center">
                             <div class="heading fs-1 fw-600 text-uppercase font-maiah text-primary letter-spacing-n04 line-height-12">Custom<br> One of a Kind Jewellery</div>
                             <div class="description text-white fs-9">
-                                Bespoke Watch and Jewellery Experts, Diamond Vaut specialises in all Gold & Diamond Jewellery and Custom Watches.
+                                Bespoke Watch and Jewellery Experts, Diamond Vault specialises in all Gold & Diamond Jewellery and Custom Watches.
                             </div>
                             <a href="#products" class="btn btn-primary">
                                 <span class="pe-3">See All</span> <svg width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
