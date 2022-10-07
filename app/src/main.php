@@ -283,8 +283,7 @@ include __DIR__ . '/header.php';
                 <select class="form-control form-select mt-4 cat2" id="cat-bracelets">
                     <option class="cat-bracelets" value="cat-bracelets-tennis-bracelets">Tennis Bracelets</option>
                     <option class="cat-bracelets" value="cat-bracelets-cuban">Cuban</option>
-                    <!-- <option class="cat-bracelets" value="cat-bracelets-bangles">Bangles</option> -->
-                    <option class="cat-bracelets" value="cat-bracelets-diamond-bangles">Diamond Bangles</option>
+                    <option class="cat-bracelets" value="cat-bracelets-diamond">Diamond Bracelets</option>
                     <option class="cat-bracelets" value="cat-bracelets-cartier-love-bracelets">Cartier Love Bracelets</option>
                     <option class="cat-bracelets" value="cat-bracelets-cartier-nail">Cartier Nail</option>
                     <option class="cat-bracelets" value="cat-bracelets-van-cleef-motif">Van Cleef Motif</option>
@@ -313,8 +312,7 @@ include __DIR__ . '/header.php';
                 <div class="f-cat" data-cat="cat-pendants" data-cat2="cat-pendants-diamond"><?= renderImg('pendants-diamond-sm.png', 'lib', "w-100") ?></div>
                 <div class="f-cat" data-cat="cat-bracelets" data-cat2="cat-bracelets-tennis-bracelets"><?= renderImg('bracelet-tennis-sm.png', 'lib', "w-100") ?></div>
                 <div class="f-cat" data-cat="cat-bracelets" data-cat2="cat-bracelets-cuban"><?= renderImg('bracelet-cuban-sm.png', 'lib', "w-100") ?></div>
-                <!-- <div class="f-cat" data-cat="cat-bracelets" data-cat2="cat-bracelets-bangles"><?= renderImg('bracelet-bangles-sm.png', 'lib', "w-100") ?></div> -->
-                <div class="f-cat" data-cat="cat-bracelets" data-cat2="cat-bracelets-diamond-bangles"><?= renderImg('bracelet-diamond-bangles-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-bracelets" data-cat2="cat-bracelets-diamond"><?= renderImg('bracelet-diamond-sm.png', 'lib', "w-100") ?></div>
                 <div class="f-cat" data-cat="cat-bracelets" data-cat2="cat-bracelets-cartier-love-bracelets"><?= renderImg('bracelet-cartier-love-sm.png', 'lib', "w-100") ?></div>
                 <div class="f-cat" data-cat="cat-bracelets" data-cat2="cat-bracelets-cartier-nail"><?= renderImg('bracelet-cartier-nail-sm.png', 'lib', "w-100") ?></div>
                 <div class="f-cat" data-cat="cat-bracelets" data-cat2="cat-bracelets-van-cleef-motif"><?= renderImg('van-cleef-motif-bracelets-sm.png', 'lib', "w-100") ?></div>
@@ -482,8 +480,7 @@ include __DIR__ . '/header.php';
                                 <div class="nav flex-column nav-pills" id="v-bracelets-nav" role="tablist" aria-orientation="vertical">
                                     <button class="nav-link active" id="v-bracelets-tennis-tab" data-bs-toggle="pill" data-bs-target="#v-bracelets-tennis" type="button" role="tab" aria-controls="v-bracelets-tennis" aria-selected="true">Tennis Bracelets</button>
                                     <button class="nav-link" id="v-bracelets-cuban-tab" data-bs-toggle="pill" data-bs-target="#v-bracelets-cuban" type="button" role="tab" aria-controls="v-bracelets-cuban" aria-selected="false">Cuban</button>
-                                    <!-- <button class="nav-link" id="v-bracelets-bangles-tab" data-bs-toggle="pill" data-bs-target="#v-bracelets-bangles" type="button" role="tab" aria-controls="v-bracelets-bangles" aria-selected="false">Bangles</button> -->
-                                    <button class="nav-link" id="v-bracelets-diamond-tab" data-bs-toggle="pill" data-bs-target="#v-bracelets-diamond" type="button" role="tab" aria-controls="v-bracelets-diamond" aria-selected="false">Diamond Bangles</button>
+                                    <button class="nav-link" id="v-bracelets-diamond-tab" data-bs-toggle="pill" data-bs-target="#v-bracelets-diamond" type="button" role="tab" aria-controls="v-bracelets-diamond" aria-selected="false">Diamond Bracelets</button>
                                     <button class="nav-link" id="v-bracelets-cartier-love-tab" data-bs-toggle="pill" data-bs-target="#v-bracelets-cartier-love" type="button" role="tab" aria-controls="v-bracelets-cartier-love" aria-selected="false">Cartier Love Bracelet</button>
                                     <button class="nav-link" id="v-bracelets-cartier-nail-tab" data-bs-toggle="pill" data-bs-target="#v-bracelets-cartier-nail" type="button" role="tab" aria-controls="v-bracelets-cartier-nail" aria-selected="false">Cartier Nail</button>
                                     <button class="nav-link" id="v-bracelets-van-cleef-motif-tab" data-bs-toggle="pill" data-bs-target="#v-bracelets-van-cleef-motif" type="button" role="tab" aria-controls="v-bracelets-van-cleef-motif" aria-selected="false">Van Cleef Motif</button>
@@ -497,11 +494,8 @@ include __DIR__ . '/header.php';
                                     <div class="tab-pane fade" id="v-bracelets-cuban" role="tabpanel" aria-labelledby="v-bracelets-cuban-tab">
                                         <?= renderImg('cuban-bracelets.png', 'lib', "w-100") ?>
                                     </div>
-                                    <!-- <div class="tab-pane fade" id="v-bracelets-bangles" role="tabpanel" aria-labelledby="v-bracelets-bangles-tab">
-                                        <?= renderImg('bangles.png', 'lib', "w-100") ?>
-                                    </div> -->
                                     <div class="tab-pane fade" id="v-bracelets-diamond" role="tabpanel" aria-labelledby="v-bracelets-diamond-tab">
-                                        <?= renderImg('diamond-bangles.png', 'lib', "w-100") ?>
+                                        <?= renderImg('diamond-bracelets.png', 'lib', "w-100") ?>
                                     </div>
                                     <div class="tab-pane fade" id="v-bracelets-cartier-love" role="tabpanel" aria-labelledby="v-bracelets-cartier-love-tab">
                                         <?= renderImg('cartier-love-bracelets.png', 'lib', "w-100") ?>
