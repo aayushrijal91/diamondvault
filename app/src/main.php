@@ -221,7 +221,7 @@ include __DIR__ . '/header.php';
                     <?= renderImg('custom-diamond.png', 'lib') ?>
                     <div class="heading fs-5 fw-600 text-uppercase font-maiah text-primary letter-spacing-n04 line-height-12 py-5">custom one of a kind Jewellery</div>
                     <div class="description text-white">
-                    Want to create Custom Design One of a kind jewellery Piece Diamond Vault can help.  Have a look at our pieces below or reach out to our team with your ideas.
+                        Want to create Custom Design One of a kind jewellery Piece Diamond Vault can help. Have a look at our pieces below or reach out to our team with your ideas.
                     </div>
                     <a href="#collection" class="btn btn-primary">
                         <span class="pe-3 text-capitalize fw-600">See All</span> <svg width="28" height="21" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -267,6 +267,7 @@ include __DIR__ . '/header.php';
                 </select>
 
                 <select class="form-control form-select mt-4 cat2" id="cat-necklaces">
+                    <option class="cat-necklaces" value="cat-necklaces-tennis-chains">Tennis Chains</option>
                     <option class="cat-necklaces" value="cat-necklaces-cuban-plain">Cuban (Plain)</option>
                     <option class="cat-necklaces" value="cat-necklaces-cuban-diamond">Cuban (Diamond)</option>
                     <option class="cat-necklaces" value="cat-necklaces-plain-gold-chains">Plain Gold Chains</option>
@@ -276,16 +277,17 @@ include __DIR__ . '/header.php';
 
                 <select class="form-control form-select mt-4 cat2" id="cat-pendants">
                     <option class="cat-pendants" value="cat-pendants-custom">Custom</option>
+                    <option class="cat-pendants" value="cat-pendants-diamond">Diamond</option>
                 </select>
 
                 <select class="form-control form-select mt-4 cat2" id="cat-bracelets">
-                    <option class="cat-bracelets" value="cat-bracelets-tennis-chains">Tennis Chains</option>
                     <option class="cat-bracelets" value="cat-bracelets-tennis-bracelets">Tennis Bracelets</option>
                     <option class="cat-bracelets" value="cat-bracelets-cuban">Cuban</option>
-                    <option class="cat-bracelets" value="cat-bracelets-bangles">Bangles</option>
+                    <!-- <option class="cat-bracelets" value="cat-bracelets-bangles">Bangles</option> -->
                     <option class="cat-bracelets" value="cat-bracelets-diamond-bangles">Diamond Bangles</option>
                     <option class="cat-bracelets" value="cat-bracelets-cartier-love-bracelets">Cartier Love Bracelets</option>
                     <option class="cat-bracelets" value="cat-bracelets-cartier-nail">Cartier Nail</option>
+                    <option class="cat-bracelets" value="cat-bracelets-van-cleef-motif">Van Cleef Motif</option>
                 </select>
             </div>
             <div class="filter-collection-results pt-6">
@@ -301,19 +303,21 @@ include __DIR__ . '/header.php';
                 <div class="f-cat" data-cat="cat-rings" data-cat2="cat-rings-wedding-bands"><?= renderImg('rings-wedding-bands-sm.png', 'lib', "w-100") ?></div>
                 <div class="f-cat" data-cat="cat-rings" data-cat2="cat-rings-custom-rings"><?= renderImg('rings-custom-sm.png', 'lib', "w-100") ?></div>
                 <div class="f-cat" data-cat="cat-rings" data-cat2="cat-rings-cartier-nail-rings"><?= renderImg('rings-cartier-nail-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-necklaces" data-cat2="cat-necklaces-tennis-chains"><?= renderImg('bracelet-tennis-chain-sm.png', 'lib', "w-100") ?></div>
                 <div class="f-cat" data-cat="cat-necklaces" data-cat2="cat-necklaces-cuban-plain"><?= renderImg('necklace-cuban-plain-sm.png', 'lib', "w-100") ?></div>
                 <div class="f-cat" data-cat="cat-necklaces" data-cat2="cat-necklaces-cuban-diamond"><?= renderImg('necklace-cuban-diamond-sm.png', 'lib', "w-100") ?></div>
                 <div class="f-cat" data-cat="cat-necklaces" data-cat2="cat-necklaces-plain-gold-chains"><?= renderImg('necklace-plain-gold-sm.png', 'lib', "w-100") ?></div>
                 <div class="f-cat" data-cat="cat-necklaces" data-cat2="cat-necklaces-diamond-chains"><?= renderImg('necklace-diamond-sm.png', 'lib', "w-100") ?></div>
                 <div class="f-cat" data-cat="cat-necklaces" data-cat2="cat-necklaces-rope-chains"><?= renderImg('necklace-rope-sm.png', 'lib', "w-100") ?></div>
                 <div class="f-cat" data-cat="cat-pendants" data-cat2="cat-pendants-custom"><?= renderImg('pendants-custom-sm.png', 'lib', "w-100") ?></div>
-                <div class="f-cat" data-cat="cat-bracelets" data-cat2="cat-bracelets-tennis-chains"><?= renderImg('bracelet-tennis-chain-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-pendants" data-cat2="cat-pendants-diamond"><?= renderImg('pendants-diamond-sm.png', 'lib', "w-100") ?></div>
                 <div class="f-cat" data-cat="cat-bracelets" data-cat2="cat-bracelets-tennis-bracelets"><?= renderImg('bracelet-tennis-sm.png', 'lib', "w-100") ?></div>
                 <div class="f-cat" data-cat="cat-bracelets" data-cat2="cat-bracelets-cuban"><?= renderImg('bracelet-cuban-sm.png', 'lib', "w-100") ?></div>
-                <div class="f-cat" data-cat="cat-bracelets" data-cat2="cat-bracelets-bangles"><?= renderImg('bracelet-bangles-sm.png', 'lib', "w-100") ?></div>
+                <!-- <div class="f-cat" data-cat="cat-bracelets" data-cat2="cat-bracelets-bangles"><?= renderImg('bracelet-bangles-sm.png', 'lib', "w-100") ?></div> -->
                 <div class="f-cat" data-cat="cat-bracelets" data-cat2="cat-bracelets-diamond-bangles"><?= renderImg('bracelet-diamond-bangles-sm.png', 'lib', "w-100") ?></div>
                 <div class="f-cat" data-cat="cat-bracelets" data-cat2="cat-bracelets-cartier-love-bracelets"><?= renderImg('bracelet-cartier-love-sm.png', 'lib', "w-100") ?></div>
                 <div class="f-cat" data-cat="cat-bracelets" data-cat2="cat-bracelets-cartier-nail"><?= renderImg('bracelet-cartier-nail-sm.png', 'lib', "w-100") ?></div>
+                <div class="f-cat" data-cat="cat-bracelets" data-cat2="cat-bracelets-van-cleef-motif"><?= renderImg('van-cleef-motif-bracelets-sm.png', 'lib', "w-100") ?></div>
             </div>
         </div>
         <div class="diamond-choices-wrapper d-none d-xl-block">
@@ -416,7 +420,8 @@ include __DIR__ . '/header.php';
                         <div class="row">
                             <div class="col-lg-4 d-none d-lg-block">
                                 <div class="nav flex-column nav-pills" id="v-necklaces-nav" role="tablist" aria-orientation="vertical">
-                                    <button class="nav-link active" id="v-necklaces-cubanPlain-tab" data-bs-toggle="pill" data-bs-target="#v-necklaces-cubanPlain" type="button" role="tab" aria-controls="v-necklaces-cubanPlain" aria-selected="true">Cuban (Plain)</button>
+                                    <button class="nav-link active" id="v-necklaces-tennisChains-tab" data-bs-toggle="pill" data-bs-target="#v-necklaces-tennisChains" type="button" role="tab" aria-controls="v-necklaces-tennisChains" aria-selected="true">Tennis Chains</button>
+                                    <button class="nav-link " id="v-necklaces-cubanPlain-tab" data-bs-toggle="pill" data-bs-target="#v-necklaces-cubanPlain" type="button" role="tab" aria-controls="v-necklaces-cubanPlain" aria-selected="false">Cuban (Plain)</button>
                                     <button class="nav-link" id="v-necklaces-cubanDiamond-tab" data-bs-toggle="pill" data-bs-target="#v-necklaces-cubanDiamond" type="button" role="tab" aria-controls="v-necklaces-cubanDiamond" aria-selected="false">Cuban (Diamond)</button>
                                     <button class="nav-link" id="v-necklaces-plainGold-tab" data-bs-toggle="pill" data-bs-target="#v-necklaces-plainGold" type="button" role="tab" aria-controls="v-necklaces-plainGold" aria-selected="false">Plain Gold Chains</button>
                                     <button class="nav-link" id="v-necklaces-diamond-tab" data-bs-toggle="pill" data-bs-target="#v-necklaces-diamond" type="button" role="tab" aria-controls="v-necklaces-diamond" aria-selected="false">Diamond Chains</button>
@@ -425,7 +430,10 @@ include __DIR__ . '/header.php';
                             </div>
                             <div class="col-lg">
                                 <div class="tab-content" id="v-necklaces-tabContent">
-                                    <div class="tab-pane fade show active" id="v-necklaces-cubanPlain" role="tabpanel" aria-labelledby="v-necklaces-cubanPlain-tab">
+                                    <div class="tab-pane fade show active" id="v-necklaces-tennisChains" role="tabpanel" aria-labelledby="v-necklaces-tennisChains-tab">
+                                        <?= renderImg('tennis-chain-bracelets.png', 'lib', "w-100") ?>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-necklaces-cubanPlain" role="tabpanel" aria-labelledby="v-necklaces-cubanPlain-tab">
                                         <?= renderImg('cubanPlain-necklaces.png', 'lib', "w-100") ?>
                                     </div>
                                     <div class="tab-pane fade" id="v-necklaces-cubanDiamond" role="tabpanel" aria-labelledby="v-necklaces-cubanDiamond-tab">
@@ -451,12 +459,16 @@ include __DIR__ . '/header.php';
                             <div class="col-lg-4 d-none d-lg-block">
                                 <div class="nav flex-column nav-pills" id="v-pendants-nav" role="tablist" aria-orientation="vertical">
                                     <button class="nav-link active" id="v-pendants-custom-tab" data-bs-toggle="pill" data-bs-target="#v-pendants-custom" type="button" role="tab" aria-controls="v-pendants-custom" aria-selected="true">Custom</button>
+                                    <button class="nav-link" id="v-pendants-diamond-tab" data-bs-toggle="pill" data-bs-target="#v-pendants-diamond" type="button" role="tab" aria-controls="v-pendants-diamond" aria-selected="false">Diamond Pendants</button>
                                 </div>
                             </div>
                             <div class="col-lg">
                                 <div class="tab-content" id="v-pendants-tabContent">
                                     <div class="tab-pane fade show active" id="v-pendants-custom" role="tabpanel" aria-labelledby="v-pendants-custom-tab">
                                         <?= renderImg('custom-pendants.png', 'lib', "w-100") ?>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pendants-diamond" role="tabpanel" aria-labelledby="v-pendants-diamond-tab">
+                                        <?= renderImg('diamond-pendants.png', 'lib', "w-100") ?>
                                     </div>
                                 </div>
                             </div>
@@ -468,29 +480,26 @@ include __DIR__ . '/header.php';
                         <div class="row">
                             <div class="col-lg-4 d-none d-lg-block">
                                 <div class="nav flex-column nav-pills" id="v-bracelets-nav" role="tablist" aria-orientation="vertical">
-                                    <button class="nav-link active" id="v-bracelets-tennisChains-tab" data-bs-toggle="pill" data-bs-target="#v-bracelets-tennisChains" type="button" role="tab" aria-controls="v-bracelets-tennisChains" aria-selected="true">Tennis Chains</button>
-                                    <button class="nav-link" id="v-bracelets-tennis-tab" data-bs-toggle="pill" data-bs-target="#v-bracelets-tennis" type="button" role="tab" aria-controls="v-bracelets-tennis" aria-selected="false">Tennis Bracelets</button>
+                                    <button class="nav-link active" id="v-bracelets-tennis-tab" data-bs-toggle="pill" data-bs-target="#v-bracelets-tennis" type="button" role="tab" aria-controls="v-bracelets-tennis" aria-selected="true">Tennis Bracelets</button>
                                     <button class="nav-link" id="v-bracelets-cuban-tab" data-bs-toggle="pill" data-bs-target="#v-bracelets-cuban" type="button" role="tab" aria-controls="v-bracelets-cuban" aria-selected="false">Cuban</button>
-                                    <button class="nav-link" id="v-bracelets-bangles-tab" data-bs-toggle="pill" data-bs-target="#v-bracelets-bangles" type="button" role="tab" aria-controls="v-bracelets-bangles" aria-selected="false">Bangles</button>
+                                    <!-- <button class="nav-link" id="v-bracelets-bangles-tab" data-bs-toggle="pill" data-bs-target="#v-bracelets-bangles" type="button" role="tab" aria-controls="v-bracelets-bangles" aria-selected="false">Bangles</button> -->
                                     <button class="nav-link" id="v-bracelets-diamond-tab" data-bs-toggle="pill" data-bs-target="#v-bracelets-diamond" type="button" role="tab" aria-controls="v-bracelets-diamond" aria-selected="false">Diamond Bangles</button>
                                     <button class="nav-link" id="v-bracelets-cartier-love-tab" data-bs-toggle="pill" data-bs-target="#v-bracelets-cartier-love" type="button" role="tab" aria-controls="v-bracelets-cartier-love" aria-selected="false">Cartier Love Bracelet</button>
                                     <button class="nav-link" id="v-bracelets-cartier-nail-tab" data-bs-toggle="pill" data-bs-target="#v-bracelets-cartier-nail" type="button" role="tab" aria-controls="v-bracelets-cartier-nail" aria-selected="false">Cartier Nail</button>
+                                    <button class="nav-link" id="v-bracelets-van-cleef-motif-tab" data-bs-toggle="pill" data-bs-target="#v-bracelets-van-cleef-motif" type="button" role="tab" aria-controls="v-bracelets-van-cleef-motif" aria-selected="false">Van Cleef Motif</button>
                                 </div>
                             </div>
                             <div class="col-lg">
                                 <div class="tab-content" id="v-bracelets-tabContent">
-                                    <div class="tab-pane fade show active" id="v-bracelets-tennisChains" role="tabpanel" aria-labelledby="v-bracelets-tennisChains-tab">
-                                        <?= renderImg('tennis-chain-bracelets.png', 'lib', "w-100") ?>
-                                    </div>
-                                    <div class="tab-pane fade" id="v-bracelets-tennis" role="tabpanel" aria-labelledby="v-bracelets-tennis-tab">
+                                    <div class="tab-pane fade show active" id="v-bracelets-tennis" role="tabpanel" aria-labelledby="v-bracelets-tennis-tab">
                                         <?= renderImg('tennis-bracelets.png', 'lib', "w-100") ?>
                                     </div>
                                     <div class="tab-pane fade" id="v-bracelets-cuban" role="tabpanel" aria-labelledby="v-bracelets-cuban-tab">
                                         <?= renderImg('cuban-bracelets.png', 'lib', "w-100") ?>
                                     </div>
-                                    <div class="tab-pane fade" id="v-bracelets-bangles" role="tabpanel" aria-labelledby="v-bracelets-bangles-tab">
+                                    <!-- <div class="tab-pane fade" id="v-bracelets-bangles" role="tabpanel" aria-labelledby="v-bracelets-bangles-tab">
                                         <?= renderImg('bangles.png', 'lib', "w-100") ?>
-                                    </div>
+                                    </div> -->
                                     <div class="tab-pane fade" id="v-bracelets-diamond" role="tabpanel" aria-labelledby="v-bracelets-diamond-tab">
                                         <?= renderImg('diamond-bangles.png', 'lib', "w-100") ?>
                                     </div>
@@ -499,6 +508,9 @@ include __DIR__ . '/header.php';
                                     </div>
                                     <div class="tab-pane fade" id="v-bracelets-cartier-nail" role="tabpanel" aria-labelledby="v-bracelets-cartier-nail-tab">
                                         <?= renderImg('cartier-nail-bracelets.png', 'lib', "w-100") ?>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-bracelets-van-cleef-motif" role="tabpanel" aria-labelledby="v-bracelets-van-cleef-motif-tab">
+                                        <?= renderImg('van-cleef-motif-bracelets.png', 'lib', "w-100") ?>
                                     </div>
                                 </div>
                             </div>
@@ -933,7 +945,7 @@ include __DIR__ . '/header.php';
                             </select>
                         </div>
                     </div>
-                    <div class="col-12 form-options group-watches">
+                    <div class="col-md-6 form-options group-watches">
                         <label for="">Side of Links?*</label>
                         <input type="text" class="form-control" name="watchesSideOfLink" placeholder="Preferred Side of Link">
                     </div>
@@ -1023,15 +1035,15 @@ include __DIR__ . '/header.php';
                         </div>
                     </div>
                     <div class="col-md-6 form-options group-rings">
-                        <label for="">Ring Size (Cm)?*</label>
-                        <input type="number" class="form-control" name="ringsSize" placeholder="15cm" value="15">
+                        <label for="">Ring Size (Letter)?*</label>
+                        <input type="text" class="form-control" name="ringsSize" placeholder="A">
                     </div>
-                    <div class="col-12 form-options group-rings">
+                    <div class="col-md-6 form-options group-rings">
                         <label for="">Clarity?*</label>
                         <div class="select-wrapper">
                             <select class="form-control" name="ringsClarity">
-                                <option selected>VS Clarity</option>
-                                <option>SI Clarity</option>
+                                <option selected>Lab Diamond</option>
+                                <option>Natural Diamond</option>
                             </select>
                         </div>
                     </div>
