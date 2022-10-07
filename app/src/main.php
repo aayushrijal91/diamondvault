@@ -271,7 +271,7 @@ include __DIR__ . '/header.php';
                     <option class="cat-necklaces" value="cat-necklaces-cuban-plain">Cuban (Plain)</option>
                     <option class="cat-necklaces" value="cat-necklaces-cuban-diamond">Cuban (Diamond)</option>
                     <option class="cat-necklaces" value="cat-necklaces-plain-gold-chains">Plain Gold Chains</option>
-                    <option class="cat-necklaces" value="cat-necklaces-diamond-chains">Diamond Chains</option>
+                    <option class="cat-necklaces" value="cat-necklaces-diamond-chains">Tennis Chains</option>
                     <option class="cat-necklaces" value="cat-necklaces-rope-chains">Rope Chains</option>
                 </select>
 
@@ -422,7 +422,7 @@ include __DIR__ . '/header.php';
                                     <button class="nav-link " id="v-necklaces-cubanPlain-tab" data-bs-toggle="pill" data-bs-target="#v-necklaces-cubanPlain" type="button" role="tab" aria-controls="v-necklaces-cubanPlain" aria-selected="false">Cuban (Plain)</button>
                                     <button class="nav-link" id="v-necklaces-cubanDiamond-tab" data-bs-toggle="pill" data-bs-target="#v-necklaces-cubanDiamond" type="button" role="tab" aria-controls="v-necklaces-cubanDiamond" aria-selected="false">Cuban (Diamond)</button>
                                     <button class="nav-link" id="v-necklaces-plainGold-tab" data-bs-toggle="pill" data-bs-target="#v-necklaces-plainGold" type="button" role="tab" aria-controls="v-necklaces-plainGold" aria-selected="false">Plain Gold Chains</button>
-                                    <button class="nav-link" id="v-necklaces-diamond-tab" data-bs-toggle="pill" data-bs-target="#v-necklaces-diamond" type="button" role="tab" aria-controls="v-necklaces-diamond" aria-selected="false">Diamond Chains</button>
+                                    <button class="nav-link" id="v-necklaces-diamond-tab" data-bs-toggle="pill" data-bs-target="#v-necklaces-diamond" type="button" role="tab" aria-controls="v-necklaces-diamond" aria-selected="false">Tennis Chains</button>
                                     <button class="nav-link" id="v-necklaces-rope-tab" data-bs-toggle="pill" data-bs-target="#v-necklaces-rope" type="button" role="tab" aria-controls="v-necklaces-rope" aria-selected="false">Rope Chains</button>
                                 </div>
                             </div>
